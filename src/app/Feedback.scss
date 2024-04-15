@@ -1,0 +1,19 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+
+  padding: 3rem;
+  &__boxTop {
+
+  }
+  &__title {
+    color: #6A6A6A;
+    font-size: 2rem;
+    font-family: 'SFBold', sans-serif;
+  }
+  &__boxBottom {
+width: 100%;
+  }
+}

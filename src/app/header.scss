@@ -1,0 +1,50 @@
+.main-container {
+  position: relative;
+}
+.nav {
+  border: 1px solid rgba(172, 172, 172, 0.51);
+  position: fixed;
+  left: 0.5rem; /* déplacez la nav à 1rem de la gauche */
+  top: 50%;
+  transform: translateY(-50%); /* centre la nav verticalement */
+  height: 15rem;
+  width: 2rem;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.21);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  &__listItem {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #a6a6a6;
+    border-radius: 1rem;
+  }
+
+}
+
+
+.header {
+  padding: 0.5rem;
+  height: 2rem;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.21);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(px);
+  z-index: 10;
+
+  &__logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 2rem;
+  }
+  &__rightContainer {
+    width: calc(100% - 2rem);
+
+
+  }
+}
