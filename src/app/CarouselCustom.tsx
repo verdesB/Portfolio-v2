@@ -8,9 +8,9 @@ export default function CarouselCustom() {
         <Carousel style={{height: '35rem'}}>
             <CarouselContent style={{height: '35rem'}}>
                 {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem style={{height: '35rem'}}>
-                    <CardCustom/>
-                </CarouselItem>
+                    <CarouselItem key={index} style={{height: '35rem'}}>
+                        <CardCustom/>
+                    </CarouselItem>
                 ))}
             </CarouselContent>
         </Carousel>
