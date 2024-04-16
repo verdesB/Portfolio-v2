@@ -3,17 +3,22 @@
   width: 100%;
   padding: 3rem;
   background-color: #F5F5F5;
+  position: relative;
+  z-index: -1;
+
   &__boxTop {
     height: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
   &__image {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   &__boxBottom {
     height: 65%;
+
   }
   &__text {
     color: #6A6A6A;

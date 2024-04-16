@@ -4,6 +4,7 @@ import CardCustom from "@/app/CardCustom";
 
 export default function CarouselCustom() {
     return(
+
         <Carousel style={{height: '35rem'}}>
             <CarouselContent style={{height: '35rem'}}>
                 {Array.from({ length: 5 }).map((_, index) => (
@@ -13,5 +14,6 @@ export default function CarouselCustom() {
                 ))}
             </CarouselContent>
         </Carousel>
+
     )
 }

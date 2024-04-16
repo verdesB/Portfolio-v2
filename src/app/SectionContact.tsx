@@ -7,6 +7,7 @@ import {Input} from "@/app/components/ui/Input";
 import {Textarea} from "@/app/components/ui/TextArea";
 import './Contact.scss'
 import {Separator} from "@/app/components/ui/Separator";
+import {Github, Linkedin} from "lucide-react";
 
 export default function ContactSection() {
     return (
@@ -34,6 +35,12 @@ export default function ContactSection() {
             </div>
             <Separator/>
             <div className="contact__boxBottom">
+                <div className="contact__boxIcon">
+                    <Github className="contact__icon"/>
+                </div>
+                <div className="contact__boxIcon">
+                    <Linkedin className="contact__icon"/>
+                </div>
 
             </div>
             <BackgroundBeams />

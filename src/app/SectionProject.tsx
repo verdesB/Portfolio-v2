@@ -4,6 +4,7 @@ import {Card} from "@/app/components/ui/Card";
 import CardCustom from "@/app/CardCustom";
 import CarouselCustom from "@/app/CarouselCustom";
 import './Project.scss'
+import {BackgroundBeams} from "@/app/components/ui/BackgroundBeams";
 
 
 export default function ProjectSection() {
@@ -18,6 +19,7 @@ export default function ProjectSection() {
 
 
             </div>
+
         </section>
     )
 }
