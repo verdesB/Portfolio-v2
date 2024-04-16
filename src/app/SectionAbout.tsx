@@ -1,10 +1,30 @@
+"use client"
 import { Avatar, AvatarFallback } from "@/app/components/ui/Avatar";
 import Image  from 'next/image';
 import Illu from '../../public/OIG3.jpg'
 import './About.scss'
 import {Separator} from "@/app/components/ui/Separator";
+import {useEffect, useState} from "react";
 
 export default function AboutSection() {
+    const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+    useEffect(() => {
+        const checkScreenSize = () => {
+            setIsLargeScreen(window.innerWidth > 900);
+        };
+
+        // Vérifiez la taille de l'écran lors du chargement initial
+        checkScreenSize();
+
+        // Écoutez les changements de taille de la fenêtre
+        window.addEventListener('resize', checkScreenSize);
+
+        // Supprimez l'écouteur d'événement lorsque le composant est démonté
+        return () => {
+            window.removeEventListener('resize', checkScreenSize);
+        };
+    }, []);
     return (
         <section className="about">
             <div className="about__boxTop">
@@ -20,7 +40,7 @@ export default function AboutSection() {
                     accident, souvent intentionnellement (histoire d&apos;y rajouter de petits clins d&apos;oeil, voire
                     des phrases embarassantes).</p>
             </div>
-            <Separator/>
+            <Separator orientation={isLargeScreen ? 'vertical' : 'horizontal'} style={{height: isLargeScreen ? 'auto' : '1px', width: isLargeScreen ? '1px' : '100%'}}/>
             <div className="about__boxBottom">
                 <Image className="about__image"  src={Illu} alt="seconde photo de benjamin"/>
             </div>

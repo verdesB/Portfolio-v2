@@ -1,3 +1,4 @@
+@import "mixin";
 .home {
   height: 100vh;
   width: 100%;
@@ -42,5 +43,38 @@
     font-size: 1.5rem;
     color: #6A6A6A;
     font-family: 'SFBold', sans-serif;
+  }
+}
+
+@include smallDevices {
+  .home {
+    padding: 5rem;
+  }
+}
+@include mediumDevices {
+  .home {
+    padding: 10rem;
+  }
+}
+@include bigDevices {
+  .home {
+    padding: 7rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    &__boxTop {
+      width: 40%;
+      align-items: start;
+    }
+    &__boxBottom {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+
+
+    }
   }
 }

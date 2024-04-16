@@ -1,3 +1,4 @@
+@import "mixin";
 .feedback {
   display: flex;
   flex-direction: column;
@@ -24,5 +25,20 @@
   }
   &__boxBottom {
 width: 100%;
+  }
+}
+@include smallDevices {
+  .feedback {
+    padding: 5rem;
+  }
+}
+@include mediumDevices {
+  .feedback {
+    padding: 10rem;
+  }
+}
+@include bigDevices {
+  .feedback {
+    padding: 7rem;
   }
 }

@@ -6,9 +6,11 @@ import react from '../../public/react.png'
 import nest from '../../public/nest.png'
 import prisma from '../../public/prisma.png'
 import graphql from '../../public/graphql.png'
+import {PinContainer} from "@/app/components/ui/3dPin";
 
 export default function CardCustom() {
     return(
+        <PinContainer className="h-full w-full" title="test" href="www.google.com">
         <Card className="card">
             <CardHeader className="card__header">
                 <Image className="card__cover" src={webtune} alt="logo Webtune"/>
@@ -26,5 +28,6 @@ export default function CardCustom() {
                 <p className="card__text">hello</p>
             </CardDescription>
         </Card>
+        </PinContainer>
     )
 }

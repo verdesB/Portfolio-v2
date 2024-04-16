@@ -1,4 +1,10 @@
+@import "mixin";
+.separatorVertical {
+
+display: none;
+}
 .skills {
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -50,5 +56,41 @@
     padding: 1rem 0;
     color: #6A6A6A;
     font-family: 'SFBold', sans-serif;
+  }
+}
+@include smallDevices {
+  .skills {
+    padding: 5rem;
+  }
+}
+@include mediumDevices {
+  .skills {
+    padding: 10rem;
+  }
+}
+@include bigDevices {
+  .skills {
+    padding: 7rem;
+    display: flex;
+    flex-direction: row;
+    &__boxTop {
+      width: 45%;
+
+    }
+    &__boxBottom {
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .separatorHorizontal {
+    display: none;
+  }
+  .separatorVertical {
+display: block;
+    height: auto;
+    width: 1px;
+
   }
 }

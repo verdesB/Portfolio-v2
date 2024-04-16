@@ -39,7 +39,8 @@ export default function SkillsSection() {
                 </div>
 
             </div>
-            <Separator/>
+            <Separator  className="separatorHorizontal"/>
+            <Separator  className="separatorVertical"/>
             <div className="skills__boxBottom">
                 <ul className="skills__listItem">
                     <li className="skills__item">Adaptabilité</li>

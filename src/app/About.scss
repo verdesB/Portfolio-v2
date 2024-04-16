@@ -1,10 +1,13 @@
+@import "mixin";
 .about {
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   width: 100%;
   padding: 3rem;
   &__boxTop {
+
 
   }
   &__title {
@@ -22,5 +25,32 @@
   }
   &__image {
     border-radius: 0.5rem;
+  }
+}
+@include smallDevices {
+  .about {
+    padding: 5rem;
+  }
+}
+@include mediumDevices {
+  .about {
+    padding: 10rem;
+  }
+}
+@include bigDevices {
+  .about {
+    padding: 7rem;
+    flex-direction: row;
+    &__boxTop {
+      width: 60%;
+    }
+    &__boxBottom {
+      width: 40%;
+      height: auto;
+    }
+    &__image {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }

@@ -1,8 +1,10 @@
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
- .body {
+ body {
    scroll-behavior: smooth;
+   background-color: #6A6A6A;
+
  }
   @layer base {
     :root {

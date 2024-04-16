@@ -1,3 +1,4 @@
+@import "mixin";
 .project {
   background-color: #F5F5F5;
   display: flex;
@@ -68,4 +69,35 @@
     color: #6A6A6A;
     font-family: 'SFRegular', sans-serif;
   }
+}
+@include smallDevices {
+  .project {
+    padding: 5rem;
+  }
+}
+@include mediumDevices {
+  .project {
+    padding: 10rem;
+  }
+}
+@include bigDevices {
+  .project {
+    padding: 7rem;
+    height: 100vh;
+    &__boxBottom {
+      height: auto;
+      width: 100%;
+    }
+  }
+  .card {
+    height: 100%;
+    width: 100%;
+  }
+  .carousel {
+    height: 100%;
+    &__item {
+      width: 80%;
+    }
+  }
+
 }

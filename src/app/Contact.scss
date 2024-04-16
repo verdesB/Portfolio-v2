@@ -1,4 +1,6 @@
+@import "mixin";
 .contact {
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -56,5 +58,40 @@
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+}
+@include smallDevices {
+  .contact {
+    padding: 5rem;
+  }
+}
+@include mediumDevices {
+  .contact {
+    padding: 10rem;
+  }
+}
+@include bigDevices {
+  .contact {
+    padding: 7rem;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    &__boxTop {
+      width: 95%;
+    }
+    &__boxBottom {
+      width: 5%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .separatorHorizontal {
+    display: none;
+  }
+  .separatorVertical {
+    display: block;
+    height: auto;
+    width: 1px;
+
   }
 }

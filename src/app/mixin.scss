@@ -1,0 +1,20 @@
+@mixin smallDevices {
+  @media only screen and (min-width: 486px)  {
+    @content;
+  }
+}
+@mixin mediumDevices {
+  @media only screen and (min-width: 601px)  {
+    @content;
+  }
+}
+@mixin bigDevices {
+  @media only screen and (min-width: 901px)  {
+    @content;
+  }
+}
+@mixin veryBigDevices {
+  @media only screen and (min-width: 1201px)  {
+    @content;
+  }
+}

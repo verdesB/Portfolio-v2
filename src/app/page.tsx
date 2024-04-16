@@ -11,13 +11,14 @@ import ProjectSection from "@/app/SectionProject";
 import FeedBackSection from "@/app/SectionFeedBack";
 import SkillsSection from "@/app/SectionSkills";
 import ContactSection from "@/app/SectionContact";
+import './main.scss'
 
 export default function Home() {
   return (
       <div className="main-container">
           <Nav/>
           <Header/>
-          <main  className="flex  flex-col items-center justify-between">
+          <main  className="flex  flex-col items-center justify-between main">
               <HomeSection/>
               <Separator style={{width: '80%'}}/>
               <AboutSection/>

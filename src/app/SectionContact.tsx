@@ -33,7 +33,8 @@ export default function ContactSection() {
                 </Card>
 
             </div>
-            <Separator/>
+            <Separator  className="separatorHorizontal"/>
+            <Separator  className="separatorVertical"/>
             <div className="contact__boxBottom">
                 <div className="contact__boxIcon">
                     <Github className="contact__icon"/>
