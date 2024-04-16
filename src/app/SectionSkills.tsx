@@ -6,7 +6,7 @@ import node from '../../public/nodeExpress.jpg'
 import nest from '../../public/nest.png'
 import graphql from '../../public/graphql.png'
 import prisma from '../../public/prisma.png'
-import mysql from '../../public/mysql.png'
+import mysql from '../../public/mySQL.png'
 import postgres from '../../public/postgres.png'
 import {Separator} from "@/app/components/ui/Separator";
 
