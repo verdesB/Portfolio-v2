@@ -1,6 +1,7 @@
 "use client";
 import { CardStack } from "./components/ui/CardsMotion";
 import { cn } from "./utils/cn";
+import '../app/Feedback.scss'
 export function CardStackDemo() {
     return (
         <div className="h-[20rem] flex items-center justify-center w-full">
@@ -20,7 +21,7 @@ export const Highlight = ({
     return (
         <span
             className={cn(
-                "font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500 px-1 py-0.5",
+                " font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500 px-1 py-0.5",
                 className
             )}
         >
@@ -35,7 +36,7 @@ const CARDS = [
         name: "Manu Arora",
         designation: "Senior Software Engineer",
         content: (
-            <p>
+            <p className="feedback__text">
                 These cards are amazing, <Highlight>I want to use them</Highlight> in my
                 project. Framer motion is a godsend ngl tbh fam 🙏
             </p>
@@ -46,7 +47,7 @@ const CARDS = [
         name: "Elon Musk",
         designation: "Senior Shitposter",
         content: (
-            <p>
+            <p className="feedback__text">
                 I dont like this Twitter thing,{" "}
                 <Highlight>deleting it right away</Highlight> because yolo. Instead, I
                 would like to call it <Highlight>X.com</Highlight> so that it can easily
@@ -59,7 +60,7 @@ const CARDS = [
         name: "Tyler Durden",
         designation: "Manager Project Mayhem",
         content: (
-            <p>
+            <p className="feedback__text">
                 The first rule of
                 <Highlight>Fight Club</Highlight> is that you do not talk about fight
                 club. The second rule of

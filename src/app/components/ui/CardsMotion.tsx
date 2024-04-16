@@ -59,10 +59,10 @@ export const CardStack = ({
                             {card.content}
                         </div>
                         <div>
-                            <p className="text-neutral-500 font-medium dark:text-white">
+                            <p className="feedback__textBold text-neutral-500 font-medium dark:text-white">
                                 {card.name}
                             </p>
-                            <p className="text-neutral-400 font-normal dark:text-neutral-200">
+                            <p className="feedback__text text-neutral-400 font-normal dark:text-neutral-200">
                                 {card.designation}
                             </p>
                         </div>

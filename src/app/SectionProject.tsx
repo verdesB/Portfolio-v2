@@ -1,10 +1,6 @@
-import {Separator} from "@/app/components/ui/Separator";
-import {Carousel, CarouselContent, CarouselItem} from "@/app/components/ui/Carousel";
-import {Card} from "@/app/components/ui/Card";
-import CardCustom from "@/app/CardCustom";
 import CarouselCustom from "@/app/CarouselCustom";
 import './Project.scss'
-import {BackgroundBeams} from "@/app/components/ui/BackgroundBeams";
+
 
 
 export default function ProjectSection() {
@@ -13,13 +9,9 @@ export default function ProjectSection() {
             <div className="project__boxTop">
                 <h2 className="project__title">Projects</h2>
             </div>
-
             <div className="project__boxBottom">
             <CarouselCustom/>
-
-
             </div>
-
         </section>
     )
 }

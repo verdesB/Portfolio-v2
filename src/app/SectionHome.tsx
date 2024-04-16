@@ -1,17 +1,16 @@
-import { Avatar, AvatarFallback } from "@/app/components/ui/Avatar";
+import { Avatar } from "@/app/components/ui/Avatar";
 import Image  from 'next/image';
 import moi from '../../public/moi.jpg'
 import './Home.scss'
-import {AuroraBackground} from "@/app/components/ui/Aurora";
+
 import {BackgroundBeams} from "@/app/components/ui/BackgroundBeams";
 
 
 export default function HomeSection() {
     return(
-        // <AuroraBackground>
         <section className="home">
             <div className="home__boxTop">
-                <Avatar className="home__image" style={{height: '9rem', width: '9rem', objectFit: 'cover'}}>
+                <Avatar className="home__image">
                     <Image src={moi} alt="Photo de Benjamin Verdès"/>
                 </Avatar>
             </div>
@@ -23,7 +22,5 @@ export default function HomeSection() {
             </div>
             <BackgroundBeams/>
         </section>
-// </AuroraBackground>
-
     )
 }

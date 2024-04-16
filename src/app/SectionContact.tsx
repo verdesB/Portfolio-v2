@@ -15,19 +15,19 @@ export default function ContactSection() {
             <div className="contact__boxTop">
                 <h2 className="contact__title">Contact</h2>
                 <Card className="contact__card">
-                    <CardHeader>
+                    <CardHeader className="contact__cardHeader">
                         Formulaire de Contact
-                        <CardDescription >You can send me an email with this form :)</CardDescription>
+                        <CardDescription className="contact__cardDescription" >You can send me an email with this form :)</CardDescription>
                     </CardHeader>
                     <CardContent>
 
-                    <Label>Name:</Label>
+                    <Label className="contact__label">Name:</Label>
                     <Input></Input>
-                        <Label>Surname:</Label>
+                        <Label className="contact__label">Surname:</Label>
                         <Input></Input>
-                        <Label>Email:</Label>
+                        <Label className="contact__label">Email:</Label>
                         <Input></Input>
-                        <Label>Message:</Label>
+                        <Label className="contact__label">Message:</Label>
                         <Textarea ></Textarea>
                     </CardContent>
                 </Card>

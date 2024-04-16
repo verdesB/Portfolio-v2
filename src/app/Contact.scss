@@ -1,5 +1,4 @@
 .contact {
-
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -7,15 +6,28 @@
   padding: 3rem;
   height: 100vh;
   position: relative;
-  //z-index: -1;
+
   &__boxTop {
-    //z-index: 1;
+
   }
   &__card {
     background-color: rgba(255, 255, 255, 0.11);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 
+  }
+  &__cardHeader {
+    color: #6A6A6A;
+    font-family: 'SFBold', sans-serif;
+    font-size: 1.3rem;
+  }
+  &__cardDescription {
+    color: #6A6A6A;
+    font-family: 'SFRegular', sans-serif;
+  }
+  &__label {
+    color: #6A6A6A;
+    font-family: 'SFRegular', sans-serif;
   }
   &__title {
     color: #6A6A6A;

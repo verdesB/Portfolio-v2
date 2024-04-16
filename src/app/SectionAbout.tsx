@@ -22,7 +22,7 @@ export default function AboutSection() {
             </div>
             <Separator/>
             <div className="about__boxBottom">
-                <Image src={Illu} alt="seconde photo de benjamin"/>
+                <Image className="about__image"  src={Illu} alt="seconde photo de benjamin"/>
             </div>
         </section>
 

@@ -5,8 +5,6 @@
   gap: 1rem;
   width: 100%;
   padding: 3rem;
-
-
   &__boxTop {
 
   }
@@ -22,6 +20,52 @@
   }
   &__boxBottom {
 
+  }
+}
+.carousel {
+  height: 35rem;
+  &__content {
+    height: 100%;
+  }
+  &__item {
+    height: 100%;
+  }
+}
 
+.card {
+  height: 30rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &__header {
+    padding: 0;
+  }
+  &__cover {
+    border-radius: 0.5rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  &__title {
+    color: #6A6A6A;
+    font-family: 'SFBold', sans-serif;
+  }
+  &__listItem {
+    display: flex;
+    gap: 1rem;
+  }
+  &__item {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+  }
+  &__text {
+    color: #6A6A6A;
+    font-family: 'SFRegular', sans-serif;
   }
 }

@@ -21,6 +21,10 @@
     gap: 1rem;
 
   }
+  &__subTitle {
+    color: #6A6A6A;
+    font-family: 'SFBold', sans-serif;
+  }
   &__title {
     color: #6A6A6A;
     font-size: 2rem;
@@ -35,5 +39,16 @@
   }
   &__boxBottom {
 
+  }
+  &__listItem {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 50%;
+    text-align: center;
+    padding: 1rem 0;
+    color: #6A6A6A;
+    font-family: 'SFBold', sans-serif;
   }
 }
