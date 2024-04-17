@@ -12,7 +12,7 @@ import {Separator} from "@/app/components/ui/Separator";
 
 export default function SkillsSection() {
     return (
-        <section className="skills">
+        <section id="skills" className="skills">
             <div className="skills__boxTop">
                 <h2 className="skills__title">Skills</h2>
                 <div className="skills__subContainer">

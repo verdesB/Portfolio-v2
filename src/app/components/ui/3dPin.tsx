@@ -19,21 +19,24 @@ export const PinContainer = ({
     const [transform, setTransform] = useState(
         "translate(-50%,-50%) rotateX(0deg)"
     );
+    const [isActive, setIsActive] = useState(false);
 
     const onMouseEnter = () => {
         setTransform("translate(-50%,-50%) rotateX(40deg) scale(0.8)");
+        setIsActive(true);
     };
     const onMouseLeave = () => {
         setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
+        setIsActive(false);
     };
 
     return (
         <div
             className={cn(
-                "relative group/pin z-50  cursor-pointer h-[60vh] w-[25rem] ml-2",
+                "relative group/pin z-50  cursor-pointer h-[700px] w-[23rem]",
                 containerClassName
             )}
-            onMouseEnter={onMouseEnter}
+            onClick={onMouseEnter}
             onMouseLeave={onMouseLeave}
         >
             <div
@@ -47,12 +50,12 @@ export const PinContainer = ({
                     style={{
                         transform: transform,
                     }}
-                    className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)]  border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden h-[29rem] w-[20rem]"
+                    className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)]  border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
                 >
                     <div className={cn(" relative z-50 ", className)}>{children}</div>
                 </div>
             </div>
-            <PinPerspective title={title} href={href} />
+            <PinPerspective title={title} href={href} isActive={isActive} />
         </div>
     );
 };
@@ -60,12 +63,15 @@ export const PinContainer = ({
 export const PinPerspective = ({
                                    title,
                                    href,
+    isActive,
                                }: {
     title?: string;
     href?: string;
+    isActive?: boolean
 }) => {
+
     return (
-        <motion.div className="pointer-events-none  w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
+        <motion.div  className={`${isActive ? 'pointer-events-none w-96 h-80 flex items-center justify-center z-[60] transition delay-75 duration-500 ease-in-out' : 'hidden'}`}>
             <div className=" w-full h-full -mt-7 flex-none  inset-0">
                 <div className="absolute top-0 inset-x-0  flex justify-center">
                     <a

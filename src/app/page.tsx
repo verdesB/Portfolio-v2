@@ -1,7 +1,5 @@
-import Image from "next/image";
-import {Apple} from "lucide-react";
+
 import './header.scss'
-import Link from "next/link";
 import Nav from "@/app/nav";
 import Header from "@/app/header";
 import HomeSection from "@/app/SectionHome";
@@ -13,11 +11,15 @@ import SkillsSection from "@/app/SectionSkills";
 import ContactSection from "@/app/SectionContact";
 import './main.scss'
 
+import HeaderSection from "@/app/SectionHeader";
+
 export default function Home() {
+
   return (
+
       <div className="main-container">
-          <Nav/>
-          <Header/>
+          <HeaderSection/>
+
           <main  className="flex  flex-col items-center justify-between main">
               <HomeSection/>
               <Separator style={{width: '80%'}}/>
@@ -33,5 +35,6 @@ export default function Home() {
 
         </main>
       </div>
+
   );
 }

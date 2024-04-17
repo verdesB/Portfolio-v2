@@ -5,28 +5,12 @@ import Illu from '../../public/OIG3.jpg'
 import './About.scss'
 import {Separator} from "@/app/components/ui/Separator";
 import {useEffect, useState} from "react";
+import {useLargeScreen} from "@/app/hooks/useLargeScreen";
 
 export default function AboutSection() {
-    const [isLargeScreen, setIsLargeScreen] = useState(false);
-
-    useEffect(() => {
-        const checkScreenSize = () => {
-            setIsLargeScreen(window.innerWidth > 900);
-        };
-
-        // Vérifiez la taille de l'écran lors du chargement initial
-        checkScreenSize();
-
-        // Écoutez les changements de taille de la fenêtre
-        window.addEventListener('resize', checkScreenSize);
-
-        // Supprimez l'écouteur d'événement lorsque le composant est démonté
-        return () => {
-            window.removeEventListener('resize', checkScreenSize);
-        };
-    }, []);
+    const isLargeScreen = useLargeScreen()
     return (
-        <section className="about">
+        <section id="about" className="about">
             <div className="about__boxTop">
                 <h2 className="about__title">About</h2>
                 <p className="about__text">On sait depuis longtemps que travailler avec du texte lisible et contenant du

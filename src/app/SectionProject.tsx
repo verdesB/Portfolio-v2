@@ -5,7 +5,7 @@ import './Project.scss'
 
 export default function ProjectSection() {
     return (
-        <section className="project">
+        <section id="projects" className="project">
             <div className="project__boxTop">
                 <h2 className="project__title">Projects</h2>
             </div>

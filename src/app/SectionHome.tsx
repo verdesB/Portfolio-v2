@@ -8,7 +8,7 @@ import {BackgroundBeams} from "@/app/components/ui/BackgroundBeams";
 
 export default function HomeSection() {
     return(
-        <section className="home">
+        <section id="home" className="home">
             <div className="home__boxTop">
                 <Avatar className="home__image">
                     <Image src={moi} alt="Photo de Benjamin Verdès"/>

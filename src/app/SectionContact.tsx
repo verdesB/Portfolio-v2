@@ -11,7 +11,7 @@ import {Github, Linkedin} from "lucide-react";
 
 export default function ContactSection() {
     return (
-        <section className="contact" >
+        <section id="contact" className="contact" >
             <div className="contact__boxTop">
                 <h2 className="contact__title">Contact</h2>
                 <Card className="contact__card">
