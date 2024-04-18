@@ -1,10 +1,8 @@
 "use client"
-import { Avatar, AvatarFallback } from "@/app/components/ui/Avatar";
 import Image  from 'next/image';
 import Illu from '../../public/OIG3.jpg'
 import './About.scss'
 import {Separator} from "@/app/components/ui/Separator";
-import {useEffect, useState} from "react";
 import {useLargeScreen} from "@/app/hooks/useLargeScreen";
 
 export default function AboutSection() {

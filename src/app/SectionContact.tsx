@@ -8,6 +8,9 @@ import {Textarea} from "@/app/components/ui/TextArea";
 import './Contact.scss'
 import {Separator} from "@/app/components/ui/Separator";
 import {Github, Linkedin} from "lucide-react";
+import Link from "next/link";
+import {Button} from "@/app/components/ui/Button";
+import ContactForm from "@/app/ContactForm";
 
 export default function ContactSection() {
     return (
@@ -20,16 +23,10 @@ export default function ContactSection() {
                         <CardDescription className="contact__cardDescription" >You can send me an email with this form :)</CardDescription>
                     </CardHeader>
                     <CardContent>
+                       <ContactForm/>
 
-                    <Label className="contact__label">Name:</Label>
-                    <Input></Input>
-                        <Label className="contact__label">Surname:</Label>
-                        <Input></Input>
-                        <Label className="contact__label">Email:</Label>
-                        <Input></Input>
-                        <Label className="contact__label">Message:</Label>
-                        <Textarea ></Textarea>
                     </CardContent>
+
                 </Card>
 
             </div>
@@ -37,12 +34,11 @@ export default function ContactSection() {
             <Separator  className="separatorVertical"/>
             <div className="contact__boxBottom">
                 <div className="contact__boxIcon">
-                    <Github className="contact__icon"/>
+                    <Link href="https://github.com/verdesB" target="_blank"><Github className="contact__icon"/></Link>
                 </div>
                 <div className="contact__boxIcon">
-                    <Linkedin className="contact__icon"/>
+                    <Link href="https://www.linkedin.com/in/verdesben" target="_blank"><Linkedin className="contact__icon"/></Link>
                 </div>
-
             </div>
             <BackgroundBeams />
         </section>

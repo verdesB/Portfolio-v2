@@ -4,14 +4,15 @@ import {HamburgerMenuIcon} from "@radix-ui/react-icons";
 import {Button} from "@/app/components/ui/Button";
 import {VisibilityContext} from "@/app/context";
 import {useContext} from "react";
-
+import logo from '../../public/logo.svg'
+import Image from "next/image";
 export default function Header() {
     const { setVisible , visible } = useContext(VisibilityContext);
     console.log(visible)
     return (
         <header className="header">
             <div className="header__logoContainer">
-                <Apple style={{color: '#454545'}}/>
+                <Image src={logo} alt="logo" />
             </div>
             <div className="header__rightContainer">
                 <VisibilityContext.Provider value={{visible, setVisible}}>
