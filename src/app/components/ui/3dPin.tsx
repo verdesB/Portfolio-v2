@@ -71,7 +71,7 @@ export const PinPerspective = ({
 }) => {
 
     return (
-        <motion.div  className={`${isActive ? 'pointer-events-none w-96 h-80 flex items-center justify-center z-[60] transition delay-75 duration-500 ease-in-out' : 'hidden'}`}>
+        <motion.div  className={`${isActive ? 'pointer-events-none w-96 h-70 flex items-center justify-center z-[60] transition delay-75 duration-500 ease-in-out' : 'hidden'}`}>
             <div className=" w-full h-full -mt-7 flex-none  inset-0">
                 <div className="absolute top-0 inset-x-0  flex justify-center">
                     <a

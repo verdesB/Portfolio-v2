@@ -27,18 +27,32 @@
 width: 100%;
   }
 }
+.motionContainer {
+  height: 35rem;
+}
+
 @include smallDevices {
   .feedback {
     padding: 5rem;
   }
+
 }
 @include mediumDevices {
   .feedback {
     padding: 7rem;
   }
+  .motionContainer {
+    height: 25rem;
+  }
 }
 @include bigDevices {
   .feedback {
     padding: 7rem;
+  }
+  .motionContainer {
+   padding: 2rem;
+  }
+  .motionCard {
+    padding: 1.5rem;
   }
 }

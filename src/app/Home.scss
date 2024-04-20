@@ -21,6 +21,7 @@
     object-fit: cover;
   }
   &__boxBottom {
+    margin-top: 5rem;
     height: 65%;
 
   }
@@ -49,11 +50,19 @@
 @include smallDevices {
   .home {
     padding: 5rem;
+    &__subTitle {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
   }
 }
 @include mediumDevices {
   .home {
     padding: 7rem;
+    &__subTitle {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
   }
 }
 @include bigDevices {
@@ -75,6 +84,10 @@
       justify-content: center;
 
 
+    }
+    &__subTitle {
+      font-size: 7rem;
+      line-height: 7rem;
     }
   }
 }

@@ -12,6 +12,7 @@ import ContactSection from "@/app/SectionContact";
 import './main.scss'
 
 import HeaderSection from "@/app/SectionHeader";
+import {Toaster} from "@/app/components/ui/Toaster";
 
 export default function Home() {
 
@@ -34,6 +35,7 @@ export default function Home() {
               <ContactSection/>
 
         </main>
+          <Toaster/>
       </div>
 
   );

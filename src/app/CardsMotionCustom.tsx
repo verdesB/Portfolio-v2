@@ -4,7 +4,7 @@ import { cn } from "./utils/cn";
 import '../app/Feedback.scss'
 export function CardStackDemo() {
     return (
-        <div className="h-[20rem] flex items-center justify-center w-full">
+        <div className="motionContainer  flex items-center justify-center w-full">
             <CardStack items={CARDS} />
         </div>
     );
@@ -21,7 +21,7 @@ export const Highlight = ({
     return (
         <span
             className={cn(
-                " font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500 px-1 py-0.5",
+                " font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500 px-1 py-0.5 ",
                 className
             )}
         >
@@ -33,19 +33,23 @@ export const Highlight = ({
 const CARDS = [
     {
         id: 0,
-        name: "Manu Arora",
-        designation: "Senior Software Engineer",
+        name: "Jury",
+        designation: "O'Clock - TP 2024",
         content: (
-            <p className="feedback__text">
-                These cards are amazing, <Highlight>I want to use them</Highlight> in my
-                project. Framer motion is a godsend ngl tbh fam 🙏
+            <>
+                <p className="feedback__text">Ton <Highlight>enthousiasme</Highlight> et ton <Highlight>professionnalisme</Highlight> ont clairement marqué le jury.</p>
+                <p className="feedback__text"> Ces qualités sont des atouts majeurs dans le monde professionnel, surtout dans le secteur du développement web et web mobile. Elles témoignent de ta capacité à t’engager pleinement dans tes projets et à travailler en équipe, des compétences très appréciées dans le milieu.</p>
+                <p className="feedback__text">Benjamin, tu as démontré une très <Highlight>belle personnalité</Highlight> et un gros potentiel lors de ta présentation.</p>
+                <p className="feedback__text"> Le jury a été impressionné par ta démarche et ton parcours.
+                Ta <Highlight>passion</Highlight>  et ta <Highlight>détermination</Highlight>  sont les clés de ton succès futur. Félicitations encore pour ton admission.
             </p>
+            </>
         ),
     },
     {
         id: 1,
-        name: "Elon Musk",
-        designation: "Senior Shitposter",
+        name: "Quentin Mousset",
+        designation: "Directeur HDM Network & Bedev",
         content: (
             <p className="feedback__text">
                 I dont like this Twitter thing,{" "}
