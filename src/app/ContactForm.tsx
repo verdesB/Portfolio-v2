@@ -3,7 +3,7 @@
 import {Label} from "@/app/components/ui/Label";
 import {Input} from "@/app/components/ui/Input";
 import {Textarea} from "@/app/components/ui/TextArea";
-import {useState} from "react";
+import React, {useState} from "react";
 import {Button} from "@/app/components/ui/Button";
 import {OctagonX} from "lucide-react";
 import {useToast} from "@/app/components/ui/useToast";
@@ -30,7 +30,7 @@ export default function ContactForm() {
         message: ''
     });
     const [errors, setErrors] = useState<IErrors>({});
-    const handleInputChange = (event, field) => {
+    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, field: string) => {
         setData({
             ...data,
             [field]: event.target.value
@@ -48,7 +48,7 @@ export default function ContactForm() {
 
         return Object.values(tempErrors).every(x => x === "");
     }
-    async function handleSubmit(event) {
+    async function handleSubmit(event:React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
         if (validate()) {
             const response = await fetch('/api/send', {
