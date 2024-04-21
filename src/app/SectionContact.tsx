@@ -40,7 +40,7 @@ export default function ContactSection() {
                     <Link href="https://www.linkedin.com/in/verdesben" target="_blank"><Linkedin className="contact__icon"/></Link>
                 </div>
             </div>
-            <BackgroundBeams />
+
         </section>
 
     )
