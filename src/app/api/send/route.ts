@@ -30,7 +30,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
      if (referer !== 'http://localhost:3000/') {
      //     if (referer !== 'https://77.37.122.221:3000/') {
      // if (referer !== 'https://www.bennydev.fr/') {
-         return new Response(JSON.stringify('Unauthorized'), {
+         return new Response(JSON.stringify('Unauthorized motherfucker'), {
              status: 401,
              headers: {
                  'Content-Type': 'application/json',
