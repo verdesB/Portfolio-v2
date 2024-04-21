@@ -27,7 +27,8 @@ const resend = new Resend(process.env.RESEND_API_KEY);
  export async function POST(request: Request) {
      const referer = request.headers.get('referer');
 
-     if (referer !== 'http://localhost:3000/') {
+     // if (referer !== 'http://localhost:3000/') {
+         if (referer !== 'http://www.bennydev.fr/') {
          return Response.json('Unauthorized')
      } else {
          if (await rateLimit(request)) {
