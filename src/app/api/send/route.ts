@@ -28,7 +28,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
      const referer = request.headers.get('referer');
 
      // if (referer !== 'http://localhost:3000/') {
-     if (referer !== 'https://www.bennydev.fr') {
+     if (referer !== 'https://www.bennydev.fr/') {
          return new Response(JSON.stringify('Unauthorized'), {
              status: 401,
              headers: {
