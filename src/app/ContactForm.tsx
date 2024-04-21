@@ -51,7 +51,7 @@ export default function ContactForm() {
     async function handleSubmit(event:React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
         if (validate()) {
-            const response = await fetch('https://www.bennydev.fr/api/send', {
+            const response = await fetch('/api/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
