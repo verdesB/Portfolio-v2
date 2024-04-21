@@ -38,14 +38,14 @@ const resend = new Resend(process.env.RESEND_API_KEY);
      //     });
      //
      // } else {
-         if (await rateLimit(request)) {
-             return new Response(JSON.stringify({ error: 'Rate limit exceeded. Please try again later.' }), {
-                 status: 429,
-                 headers: {
-                     'Content-Type': 'application/json',
-                 },
-             });
-         }
+     //     if (await rateLimit(request)) {
+     //         return new Response(JSON.stringify({ error: 'Rate limit exceeded. Please try again later.' }), {
+     //             status: 429,
+     //             headers: {
+     //                 'Content-Type': 'application/json',
+     //             },
+     //         });
+     //     }
          const body = await request.text();
          const json = JSON.parse(body);
          const {name, surname, email, message} = json;
