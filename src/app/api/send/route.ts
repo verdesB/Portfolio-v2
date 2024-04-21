@@ -25,19 +25,19 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 //     }
 // }
  export async function POST(request: Request) {
-     const referer = request.headers.get('referer');
-
-     // if (referer !== 'https://localhost:3000/') {
-         if (referer !== 'https://77.37.122.221:3000/') {
-     // if (referer !== 'https://www.bennydev.fr/') {
-         return new Response(JSON.stringify('Unauthorized'), {
-             status: 401,
-             headers: {
-                 'Content-Type': 'application/json',
-             },
-         });
-
-     } else {
+     // const referer = request.headers.get('referer');
+     //
+     // // if (referer !== 'https://localhost:3000/') {
+     //     if (referer !== 'https://77.37.122.221:3000/') {
+     // // if (referer !== 'https://www.bennydev.fr/') {
+     //     return new Response(JSON.stringify('Unauthorized'), {
+     //         status: 401,
+     //         headers: {
+     //             'Content-Type': 'application/json',
+     //         },
+     //     });
+     //
+     // } else {
          if (await rateLimit(request)) {
              return new Response(JSON.stringify({ error: 'Rate limit exceeded. Please try again later.' }), {
                  status: 429,
@@ -63,5 +63,5 @@ const resend = new Resend(process.env.RESEND_API_KEY);
          } catch (error) {
              return Response.json({error});
          }
-     }
+     // }
 }
