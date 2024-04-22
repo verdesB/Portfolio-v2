@@ -1,3 +1,16 @@
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+# Ajoutez les types MIME pour les fichiers de polices
+AddType application/vnd.ms-fontobject .eot
+AddType font/ttf .ttf
+AddType font/otf .otf
+AddType font/woff .woff
+AddType font/woff2 .woff2
+
+# Activez la compression pour les fichiers de polices
+<FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
+    SetOutputFilter DEFLATE
+</FilesMatch>
