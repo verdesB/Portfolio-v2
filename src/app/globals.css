@@ -82,13 +82,13 @@
 
 @font-face {
   font-family: 'SFRegular';
-  src: url('/SFPRODISPLAYREGULAR.otf') format('opentype');
+  src: url('/fonts/SFPRODISPLAYREGULAR.otf') format('opentype');
 }
 @font-face {
   font-family: 'SFMedium';
-  src: url('/SFPRODISPLAYMEDIUM.otf') format('opentype');
+  src: url('/fonts/SFPRODISPLAYMEDIUM.otf') format('opentype');
 }
 @font-face {
   font-family: 'SFBold';
-  src: url('/SFPRODISPLAYBOLD.otf') format('opentype');
+  src: url('/fonts/SFPRODISPLAYBOLD.otf') format('opentype');
 }
