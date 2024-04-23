@@ -19,7 +19,7 @@ export default function CarouselCustom() {
         {
             id: 1,
             cover: webtune,
-            name: 'Webtune',
+            name: 'WEBTUNE',
             technos: [nest,react,prisma,graphql,mysql],
             descriptions:['CMS permettant une gestion optimale de ses réseaux sociaux.', 'Gestion centralisé de la plupart des plateformes existantes', 'Possibilité de programmer son contenu'],
             link:'In development',
@@ -27,7 +27,7 @@ export default function CarouselCustom() {
         {
             id: 2,
             cover:qualiextra,
-            name: 'Qualiextra',
+            name: 'QUALIEXTRA',
             technos: [react, sass,node,sequelize,postgres],
             descriptions:['',''],
             link:'',
