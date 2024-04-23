@@ -25,13 +25,13 @@ module.exports = {
       },
     },
     extend: {
-      fontFamily: {
-        'sf-regular': ['SFRegular', 'sans-serif'],
-        'sf-medium': ['SFMedium', 'sans-serif'],
-        'sf-bold': ['SFBold', 'sans-serif'],
-      }
-    }
-  },
+  //     fontFamily: {
+  //       'sf-regular': ['SFRegular', 'sans-serif'],
+  //       'sf-medium': ['SFMedium', 'sans-serif'],
+  //       'sf-bold': ['SFBold', 'sans-serif'],
+  //     }
+  //   }
+  // },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
