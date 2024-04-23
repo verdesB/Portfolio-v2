@@ -12,16 +12,21 @@
   &__title {
     color: #6A6A6A;
     font-size: 2rem;
-    font-family: 'SFBold', sans-serif;
+    //font-family: 'SFBold', sans-serif;
+    font-family: 'SF pro', sans-serif;
+    font-weight: bold;
     margin-bottom: 2rem;
   }
   &__text {
     color: #6A6A6A;
-    font-family: 'SFRegular', sans-serif;
+    //font-family: 'SFRegular', sans-serif;
+    font-family: 'SF pro', sans-serif;
   }
   &__textBold {
     color: #6A6A6A;
-    font-family: 'SFBold', sans-serif;
+    //font-family: 'SFBold', sans-serif;
+    font-family: 'SF pro', sans-serif;
+    font-weight: bold;
   }
   &__boxBottom {
 width: 100%;

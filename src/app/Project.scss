@@ -20,7 +20,8 @@
   }
   &__text {
     color: #6A6A6A;
-    font-family: 'SFRegular', sans-serif;
+    //font-family: 'SFRegular', sans-serif;
+    font-family: 'SF pro', sans-serif;
   }
   &__boxBottom {
 
@@ -81,7 +82,8 @@
   }
   &__text {
     color: #6A6A6A;
-    font-family: 'SFRegular', sans-serif;
+    //font-family: 'SFRegular', sans-serif;
+    font-family: 'SF pro', sans-serif;
   }
 }
 @include smallDevices {
