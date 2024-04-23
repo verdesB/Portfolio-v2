@@ -11,15 +11,15 @@ export default function AboutSection() {
         <section id="about" className="about">
             <div className="about__boxTop">
                 <h2 className="about__title">About</h2>
-                <p className="about__text">Bonjour, je m&apos;appelle Benjamin Verdes. À l&apos;âge de 28 ans, après
-                    avoir sillonné la France et vécu de multiples expériences professionnelles diverses, j&apos;ai
-                    décidé de poser mes valises en Île-de-France. Ma passion pour le dynamisme et l&apos;innovation
-                    m&apos;a conduit à me lancer dans le développement web. </p>
-                <p className="about__text">Je suis constamment à la recherche de nouvelles opportunités pour développer
-                    mes compétences et contribuer à des projets passionnants. Mon objectif est de créer des solutions
-                    web intuitives et efficaces qui répondent aux besoins des utilisateurs.</p>
-                <p className="about__text">Si vous souhaitez en savoir plus sur mon travail ou discuter
-                    d&apos;opportunités, n&apos;hésitez pas à me contacter.</p>
+                <p className="about__text">Salut, moi c&apos;est Benjamin Verdes. À 28 ans, après avoir fait le tour de
+                    la France et vécu plein d&apos;aventures pro, j&apos;ai décidé de m&apos;installer en Île-de-France.
+                    J&apos;ai toujours été attiré par le dynamisme et l&apos;innovation, alors je me suis lancé dans le
+                    dev web. </p>
+                <p className="about__text">Je suis toujours à l&apos;affût de nouvelles opportunités pour booster mes
+                    compétences et participer à des projets qui déchirent. Mon but ? Créer des solutions web qui sont à
+                    la fois intuitives et efficaces, et qui répondent aux besoins des utilisateurs.</p>
+                <p className="about__text">Si tu veux en savoir plus sur ce que je fais ou discuter d&apos;opportunités,
+                    n&apos;hésite pas à me contacter.</p>
             </div>
             <Separator orientation={isLargeScreen ? 'vertical' : 'horizontal'}
                        style={{height: isLargeScreen ? 'auto' : '1px', width: isLargeScreen ? '1px' : '100%'}}/>
