@@ -12,7 +12,7 @@ import node from '../../public/node.png'
 import postgres from '../../public/postgres.png'
 import sequelize from '../../public/sequelize.png'
 import qualiextra from '../../public/qualiextra.jpg'
-import mysql from '../../public/mysql.png'
+import mysql from '../../public/mySQL.png'
 
 export default function CarouselCustom() {
     const projects = [
