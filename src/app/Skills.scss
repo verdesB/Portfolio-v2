@@ -29,12 +29,16 @@ display: none;
   }
   &__subTitle {
     color: #6A6A6A;
-    font-family: 'SFBold', sans-serif;
+    //font-family: 'SFBold', sans-serif;
+    font-family: 'SF pro', sans-serif;
+    font-weight: bold;
   }
   &__title {
     color: #6A6A6A;
     font-size: 2rem;
-    font-family: 'SFBold', sans-serif;
+    //font-family: 'SFBold', sans-serif;
+    font-family: 'SF pro', sans-serif;
+    font-weight: bold;
     margin-bottom: 2rem;
   }
   &__img {
@@ -55,7 +59,9 @@ display: none;
     text-align: center;
     padding: 1rem 0;
     color: #6A6A6A;
-    font-family: 'SFBold', sans-serif;
+    //font-family: 'SFBold', sans-serif;
+    font-family: 'SF pro', sans-serif;
+    font-weight: bold;
   }
 }
 @include smallDevices {
