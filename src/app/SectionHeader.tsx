@@ -9,7 +9,6 @@ export default function HeaderSection(){
     return(
         <VisibilityContext.Provider value={{visible,setVisible}}>
             <Nav/>
-
             <Header/>
         </VisibilityContext.Provider>
     )

@@ -5,18 +5,18 @@ import {FloatingNav} from "@/app/components/ui/FloatingNavBar";
 export default function Nav() {
     const navItems = [
         {
-            name: "Home",
-            link: "#home",
+            name: "Accueil",
+            link: "#accueil",
             icon: <Home className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
         {
-            name: "About",
-            link: "#about",
+            name: "A propos",
+            link: "#a-propos",
             icon: <User className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
         {
-            name: "Projects",
-            link: "#projects",
+            name: "Projets",
+            link: "#projets",
             icon: (
                 <BaggageClaim className="h-4 w-4 text-neutral-500 dark:text-white" />
             ),

@@ -52,25 +52,9 @@ const CARDS = [
         designation: "Directeur HDM Network & Bedev",
         content: (
             <p className="feedback__text">
-                I dont like this Twitter thing,{" "}
-                <Highlight>deleting it right away</Highlight> because yolo. Instead, I
-                would like to call it <Highlight>X.com</Highlight> so that it can easily
-                be confused with adult sites.
+                <Highlight>Feedback en attente ...</Highlight>
             </p>
         ),
     },
-    {
-        id: 2,
-        name: "Tyler Durden",
-        designation: "Manager Project Mayhem",
-        content: (
-            <p className="feedback__text">
-                The first rule of
-                <Highlight>Fight Club</Highlight> is that you do not talk about fight
-                club. The second rule of
-                <Highlight>Fight club</Highlight> is that you DO NOT TALK about fight
-                club.
-            </p>
-        ),
-    },
+
 ];

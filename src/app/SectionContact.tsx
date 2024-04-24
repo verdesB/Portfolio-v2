@@ -20,7 +20,7 @@ export default function ContactSection() {
                 <Card className="contact__card">
                     <CardHeader className="contact__cardHeader">
                         Formulaire de Contact
-                        <CardDescription className="contact__cardDescription" >You can send me an email with this form :)</CardDescription>
+                        <CardDescription className="contact__cardDescription" >Vous pouvez me contacter directement avec ce formulaire , et je vous répondrais au plus vite </CardDescription>
                     </CardHeader>
                     <CardContent>
                        <ContactForm/>

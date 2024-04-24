@@ -76,7 +76,7 @@ export default function ContactForm() {
 
         <form className='contact__form' onSubmit={handleSubmit}>
             <div className='contact__boxInput'>
-                <Label className="contact__label">Name:</Label>
+                <Label className="contact__label">Nom:</Label>
                 <Input className="contact__input" onChange={(event) => handleInputChange(event, 'name')}></Input>
                 <div className='contact__boxErrors'>
                     {errors.name &&
@@ -88,7 +88,7 @@ export default function ContactForm() {
                 </div>
             </div>
             <div className='contact__boxInput'>
-                <Label className="contact__label">Surname:</Label>
+                <Label className="contact__label">Prénom:</Label>
                 <Input className="contact__input" onChange={(event) => handleInputChange(event, 'surname')}></Input>
                 <div className='contact__boxErrors'>
                     {errors.surname &&

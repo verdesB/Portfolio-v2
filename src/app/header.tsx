@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <header className="header">
             <div className="header__logoContainer">
-                <Image src={logo} alt="logo" />
+                <p>PORTFOLIO</p>
             </div>
             <div className="header__rightContainer">
                 <VisibilityContext.Provider value={{visible, setVisible}}>
