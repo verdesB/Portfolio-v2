@@ -50,18 +50,20 @@ export default function CardCustom({cover, name, technos, descriptions, link}: C
                 <Image className="card__cover" src={webtune} alt="logo Webtune"/>
             </CardHeader>
             <div className="card__description">
-                <h4 className="card__title">Webtune</h4>
+                <h4 className="card__title">{name}</h4>
                 <Separator/>
                 <ul className="card__listItem">
-                    <li className="card__item" ><Image className="card__item" src={react} alt="react"/></li>
-                    <li className="card__item" ><Image className="card__item" src={nest} alt="nest"/></li>
-                    <li className="card__item" ><Image className="card__item" src={graphql} alt="grapqhQL"/></li>
-                    <li className="card__item" ><Image className="card__item" src={prisma} alt="prisma"/></li>
+                    {technos.map((techno, index) => (
+                        <li className="card__item" key={index}>
+                            <Image className="card__item" src={techno} alt={techno}/>
+                        </li>
+                    ))}
                 </ul>
                 <Separator/>
-                <p className="card__text">CMS permettant une gestion optimale de ses réseaux sociaux.</p>
-                <p className="card__text"> Gestion centralisé de la plupart des plateformes existantes</p>
-                <p className="card__text">Possibilité de programmer son contenu</p>
+                {descriptions.map((description, index) => (
+                    <p className="card__text" key={index}>{description}</p>
+                ))
+                }
             </div>
         </Card>
         }

@@ -3,10 +3,14 @@ import Image  from 'next/image';
 import moi from '../../public/moi.jpg'
 import './Home.scss'
 
+
+
+
 import {BackgroundBeams} from "@/app/components/ui/BackgroundBeams";
 
 
 export default function HomeSection() {
+
     return(
         <section id="home" className="home">
             <div className="home__boxTop">

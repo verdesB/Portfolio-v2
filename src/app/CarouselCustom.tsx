@@ -21,7 +21,7 @@ export default function CarouselCustom() {
             cover: webtune,
             name: 'WEBTUNE',
             technos: [nest,react,prisma,graphql,mysql],
-            descriptions:['CMS permettant une gestion optimale de ses réseaux sociaux.', 'Gestion centralisé de la plupart des plateformes existantes', 'Possibilité de programmer son contenu'],
+            descriptions:['CMS permettant une gestion optimale de ses réseaux sociaux.', 'Gestion centralisé de la plupart des plateformes existantes', 'Possibilité de programmer son contenu','Integration d\'un assistant IA'],
             link:'In development',
         },
         {
@@ -29,7 +29,7 @@ export default function CarouselCustom() {
             cover:qualiextra,
             name: 'QUALIEXTRA',
             technos: [react, sass,node,sequelize,postgres],
-            descriptions:['',''],
+            descriptions:['Plateforme en ligne facilitant la mise en relation entre clients et fournisseurs de services dans l\'industrie hoteliere','Application basé sur trois roles avec son apnel de fonctionnalité pour le bon fonctionnement du site '],
             link:'',
         },
         {
