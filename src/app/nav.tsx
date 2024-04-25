@@ -1,5 +1,14 @@
 import Link from "next/link";
-import {BaggageClaim, Home, MessageCircle, User} from "lucide-react";
+import {
+    BaggageClaim, Contact,
+    FolderGit2,
+    Home,
+    Layers3,
+    MessageCircle,
+    MessageSquareHeart,
+    User,
+    UserRoundSearch
+} from "lucide-react";
 import {FloatingNav} from "@/app/components/ui/FloatingNavBar";
 
 export default function Nav() {
@@ -12,27 +21,27 @@ export default function Nav() {
         {
             name: "A propos",
             link: "#a-propos",
-            icon: <User className="h-4 w-4 text-neutral-500 dark:text-white" />,
+            icon: <UserRoundSearch className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
         {
             name: "Projets",
             link: "#projets",
             icon: (
-                <BaggageClaim className="h-4 w-4 text-neutral-500 dark:text-white" />
+                <FolderGit2  className="h-4 w-4 text-neutral-500 dark:text-white" />
             ),
         },
         {
             name: "Skills",
             link: "#skills",
             icon: (
-                <MessageCircle className="h-4 w-4 text-neutral-500 dark:text-white" />
+                <Layers3 className="h-4 w-4 text-neutral-500 dark:text-white" />
             ),
         },
         {
             name: "FeedBacks",
             link: "#feedbacks",
             icon: (
-                <MessageCircle className="h-4 w-4 text-neutral-500 dark:text-white" />
+                <MessageSquareHeart className="h-4 w-4 text-neutral-500 dark:text-white" />
             ),
         },
 
@@ -40,7 +49,7 @@ export default function Nav() {
             name: "Contact",
             link: "#contact",
             icon: (
-                <MessageCircle className="h-4 w-4 text-neutral-500 dark:text-white" />
+                <Contact className="h-4 w-4 text-neutral-500 dark:text-white" />
             ),
         },
     ];
