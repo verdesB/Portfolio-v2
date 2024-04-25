@@ -13,6 +13,7 @@ import postgres from '../../public/postgres.png'
 import sequelize from '../../public/sequelize.png'
 import qualiextra from '../../public/qualiextra.jpg'
 import mysql from '../../public/mySQL.png'
+import plus from '../../public/V.png'
 
 export default function CarouselCustom() {
     const projects = [
@@ -40,9 +41,9 @@ export default function CarouselCustom() {
         },
         {
             id: 3,
-            cover:'',
+            cover: plus,
             name: '',
-            technos: ['','',''],
+            technos: [plus],
             descriptions:['Et si s\'était votre projet ?',''],
             link:'',
         },
