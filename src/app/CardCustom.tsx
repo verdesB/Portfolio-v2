@@ -22,7 +22,7 @@ export default function CardCustom({cover, name, technos, descriptions, link}: C
     const isLargeScreen = useLargeScreen()
     return(
         <>
-        {isLargeScreen?  <PinContainer className="h-full w-full" title="test" href="www.google.com">
+        {isLargeScreen?  <PinContainer className="h-full w-full" title="Non déployé" href="">
                 <Card className="card">
                     <CardHeader className="card__header">
                         <Image className="card__cover" src={cover} alt="logo Webtune"/>
