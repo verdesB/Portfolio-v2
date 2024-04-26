@@ -47,7 +47,7 @@ export default function CardCustom({cover, name, technos, descriptions, link}: C
             </PinContainer> :
         <Card className="card">
             <CardHeader className="card__header">
-                <Image className="card__cover" src={webtune} alt="logo Webtune"/>
+                <Image className="card__cover" src={cover} alt={`logo ${name}`}/>
             </CardHeader>
             <div className="card__description">
                 <h4 className="card__title">{name}</h4>
