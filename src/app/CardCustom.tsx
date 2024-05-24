@@ -22,12 +22,34 @@ export default function CardCustom({cover, name, technos, descriptions, link}: C
     const isLargeScreen = useLargeScreen()
     return(
         <>
-        {isLargeScreen?  <PinContainer className="h-full w-full" title="Non déployé" href="">
+            {isLargeScreen?  <PinContainer className="h-full w-full" title={ link} href={link} >
+                    <Card className="card">
+                        <CardHeader className="card__header">
+                            <Image className="card__cover" src={cover} alt="logo Webtune"/>
+                        </CardHeader>
+                        <CardDescription className="card__description">
+                            <h4 className="card__title">{name}</h4>
+                            <Separator/>
+                            <ul className="card__listItem">
+                                {technos.map((techno, index) => (
+                                    <li className="card__item" key={index}>
+                                        <Image className="card__item" src={techno} alt={techno}/>
+                                    </li>
+                                ))}
+                            </ul>
+                            <Separator/>
+                            {descriptions.map((description, index) => (
+                                <p className="card__text" key={index}>{description}</p>
+                            ))
+                            }
+                        </CardDescription>
+                    </Card>
+                </PinContainer> :
                 <Card className="card">
                     <CardHeader className="card__header">
-                        <Image className="card__cover" src={cover} alt="logo Webtune"/>
+                        <Image className="card__cover" src={cover} alt={`logo ${name}`}/>
                     </CardHeader>
-                    <CardDescription className="card__description">
+                    <div className="card__description">
                         <h4 className="card__title">{name}</h4>
                         <Separator/>
                         <ul className="card__listItem">
@@ -42,31 +64,9 @@ export default function CardCustom({cover, name, technos, descriptions, link}: C
                             <p className="card__text" key={index}>{description}</p>
                         ))
                         }
-                    </CardDescription>
+                    </div>
                 </Card>
-            </PinContainer> :
-        <Card className="card">
-            <CardHeader className="card__header">
-                <Image className="card__cover" src={cover} alt={`logo ${name}`}/>
-            </CardHeader>
-            <div className="card__description">
-                <h4 className="card__title">{name}</h4>
-                <Separator/>
-                <ul className="card__listItem">
-                    {technos.map((techno, index) => (
-                        <li className="card__item" key={index}>
-                            <Image className="card__item" src={techno} alt={techno}/>
-                        </li>
-                    ))}
-                </ul>
-                <Separator/>
-                {descriptions.map((description, index) => (
-                    <p className="card__text" key={index}>{description}</p>
-                ))
-                }
-            </div>
-        </Card>
-        }
+            }
         </>
 
     )

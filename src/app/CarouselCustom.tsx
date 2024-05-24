@@ -26,7 +26,7 @@ export default function CarouselCustom() {
                 'CMS permettant une gestion optimale de ses réseaux sociaux.', 'Gestion centralisé de la plupart des plateformes existantes',
                 'Possibilité de programmer son contenu','Integration d\'un assistant IA'
             ],
-            link:'In development',
+            link:'http://webtune.bennydev.fr',
         },
         {
             id: 2,
@@ -37,7 +37,7 @@ export default function CarouselCustom() {
                 'Plateforme en ligne facilitant la mise en relation entre clients et fournisseurs de services dans l\'industrie hôtelière',
                 'Application basée sur trois rôles avec son panel de fonctionnalités pour le bon fonctionnement du site'
             ],
-            link:'',
+            link:'En refonte visuelle',
         },
         {
             id: 3,
