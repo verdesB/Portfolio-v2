@@ -26,7 +26,7 @@ export default function HomeSection() {
                     <h2 className="home__subTitle">DEVELOPER</h2><span className="home__span">.ts</span>
                 </div>
             </div>
-            <BackgroundBeams/>
+
         </section>
     )
 }

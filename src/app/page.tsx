@@ -13,6 +13,7 @@ import './main.scss'
 
 import HeaderSection from "@/app/SectionHeader";
 import {Toaster} from "@/app/components/ui/Toaster";
+import Footer from "@/app/Footer";
 
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
               <ContactSection/>
 
         </main>
+          <Footer/>
           <Toaster/>
       </div>
 

@@ -1,0 +1,38 @@
+.footer {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px -2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 0.5rem;
+  height: 7rem;
+
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: space-between;
+
+  z-index: 10;
+  &__boxLeft {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  &__boxMiddle {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+  &__boxRight {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
