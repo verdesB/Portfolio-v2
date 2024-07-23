@@ -5,13 +5,6 @@ import './Home.scss'
 
 
 
-
-
-
-import {BackgroundBeams} from "@/app/components/ui/BackgroundBeams";
-import {ThreeCanvas} from "@/app/ThreeCanvas";
-
-
 export default function HomeSection() {
 
     return(
@@ -29,7 +22,7 @@ export default function HomeSection() {
                 <div style={{display: 'flex', alignItems: 'center'}}>
                     <h2 className="home__subTitle">DEVELOPER</h2><span className="home__span"></span>
                 </div>
-                <ThreeCanvas/>
+
             </div>
 
         </section>
