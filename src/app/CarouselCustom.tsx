@@ -14,9 +14,23 @@ import sequelize from '../../public/sequelize.png'
 import qualiextra from '../../public/qualiextra.jpg'
 import mysql from '../../public/mySQL.png'
 import plus from '../../public/V.png'
-
+import showroom from '../../public/showroomRTF.png'
+import next from '../../public/next.svg'
+import three from '../../public/three.png'
 export default function CarouselCustom() {
     const projects = [
+        {
+            id: 1,
+            cover: showroom,
+            name: 'SHOWROOM 3D',
+            technos: [next, three],
+            descriptions: [
+                'Galerie d\' arts interactive 3D',
+                'Expérience Mobile & Bureau',
+            ],
+            link: 'showroom-rtf.vercel.app'
+
+        },
         {
             id: 1,
             cover: webtune,
