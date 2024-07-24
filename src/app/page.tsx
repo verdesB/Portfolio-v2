@@ -14,6 +14,7 @@ import './main.scss'
 import HeaderSection from "@/app/SectionHeader";
 import {Toaster} from "@/app/components/ui/Toaster";
 import Footer from "@/app/Footer";
+import SectionProjects from "@/app/SectionProjects";
 
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
               <Separator style={{width: '80%'}}/>
               <AboutSection/>
               <Separator style={{width: '80%'}}/>
-              <ProjectSection/>
+              <SectionProjects/>
               <Separator style={{width: '80%'}}/>
               <SkillsSection/>
               <Separator style={{width: '80%'}}/>

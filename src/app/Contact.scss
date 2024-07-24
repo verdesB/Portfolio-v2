@@ -5,10 +5,10 @@
   flex-direction: column;
   gap: 2rem;
   width: 100%;
-
+font-family: CooperHewitt, sans-serif;
   //height: 100vh;
   position: relative;
-  padding: 1rem 1rem 4rem 1rem;
+  padding: 0.5rem 0.5rem 4rem 0.5rem;
 
   &__boxTop {
 
@@ -21,28 +21,24 @@
   }
   &__cardHeader {
     color: #6A6A6A;
-    //font-family: 'SFBold', sans-serif;
-    font-family: 'SF pro', sans-serif;
+
     font-weight: bold;
     font-size: 1.3rem;
   }
   &__cardDescription {
     color: #6A6A6A;
-    //font-family: 'SFRegular', sans-serif;
-    font-family: 'SF pro', sans-serif;
+
   }
   &__label {
     color: #6A6A6A;
-    //font-family: 'SFRegular', sans-serif;
-    font-family: 'SF pro', sans-serif;
+
     font-weight: bold;
   }
 
   &__title {
     color: #6A6A6A;
     font-size: 2rem;
-    //font-family: 'SFBold', sans-serif;
-    font-family: 'SF pro', sans-serif;
+
     font-weight: bold;
     margin-bottom: 2rem;
   }
@@ -88,11 +84,7 @@
     margin-top: 0.5rem;
   }
 }
-@include smallDevices {
-  .contact {
-    padding: 5rem;
-  }
-}
+
 @include mediumDevices {
   .contact {
     padding: 7rem;

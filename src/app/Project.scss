@@ -5,23 +5,26 @@
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-  padding: 1rem 1rem 4rem 1rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
+
+
+
 
   &__boxTop {
+
 
   }
   &__title {
     color: #6A6A6A;
     font-size: 2rem;
-    //font-family: 'SFBold', sans-serif;
-    font-family: 'SF pro', sans-serif;
+    font-family: 'CooperHewitt', sans-serif;
     font-weight: bold;
     margin-bottom: 2rem;
 
   }
   &__text {
     color: #6A6A6A;
-    //font-family: 'SFRegular', sans-serif;
     font-family: 'SF pro', sans-serif;
   }
   &__boxBottom {
@@ -76,11 +79,16 @@
   &__listItem {
     display: flex;
     gap: 1rem;
+    height: 100%;
+    align-items: center;
   }
   &__item {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 1rem;
+     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__text {
     color: #6A6A6A;
@@ -90,7 +98,7 @@
 }
 @include smallDevices {
   .project {
-    padding: 5rem;
+
   }
   .card {
     height: 32rem;
@@ -109,7 +117,7 @@
 }
 @include mediumDevices {
   .project {
-    padding: 7rem 0 7rem 7rem;
+
   }
   .carousel {
 
@@ -125,8 +133,8 @@
 }
 @include bigDevices {
   .project {
-    padding: 7rem 0 7rem 7rem;
-    height: 100vh;
+padding: 7rem;
+
     &__boxBottom {
       height: auto;
       width: 100%;

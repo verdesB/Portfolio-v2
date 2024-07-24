@@ -16,7 +16,7 @@ export default function ContactSection() {
     return (
         <section id="contact" className="contact" >
             <div className="contact__boxTop">
-                <h2 className="contact__title">Contact</h2>
+                <h2 className="contact__title">CONTACT</h2>
                 <Card className="contact__card">
                     <CardHeader className="contact__cardHeader">
                         Formulaire de Contact
