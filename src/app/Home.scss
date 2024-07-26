@@ -6,6 +6,7 @@
   background-color: #F5F5F5;
   position: relative;
   z-index: -1;
+  user-select: none;
 
   &__boxTop {
     height: 35%;

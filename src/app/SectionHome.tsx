@@ -2,6 +2,7 @@ import { Avatar } from "@/app/components/ui/Avatar";
 import Image  from 'next/image';
 import moi from '../../public/moi.jpg'
 import './Home.scss'
+import {SceneTypeScript} from "@/app/components/3D/Scenes/SceneTypeScript";
 
 
 
@@ -24,6 +25,7 @@ export default function HomeSection() {
                 </div>
 
             </div>
+            <SceneTypeScript/>
 
         </section>
     )
