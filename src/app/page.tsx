@@ -15,6 +15,8 @@ import HeaderSection from "@/app/SectionHeader";
 import {Toaster} from "@/app/components/ui/Toaster";
 import Footer from "@/app/Footer";
 import SectionProjects from "@/app/SectionProjects";
+import SceneFallingObjects from "@/app/components/3D/Scenes/SceneFallingObjects";
+
 
 
 export default function Home() {
