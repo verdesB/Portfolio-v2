@@ -5,7 +5,10 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Physics, useSphere, usePlane } from "@react-three/cannon";
 import { useRef } from "react";
 //@ts-nocheck
+
+// @ts-ignore
 function GLTFModel({ url, ...props }) {
+    // @ts-ignore
     const { scene } = useGLTF(url);
     const [ref, api] = useSphere(() => ({
         mass: 1,
@@ -59,6 +62,7 @@ function MovingObjects() {
     );
 }
 
+// @ts-ignore
 function Plane(props) {
     const [ref] = usePlane(() => ({ rotation: [-Math.PI / 2, 0, 0], ...props }));
     return (
@@ -69,10 +73,13 @@ function Plane(props) {
     );
 }
 
+// @ts-ignore
 function Wall({ position, rotation }) {
     const [ref] = usePlane(() => ({ position, rotation }));
 
+
     return (
+        // @ts-ignore
         <mesh ref={ref} position={position} rotation={rotation}>
             <planeGeometry args={[10, 10]} />
             <meshStandardMaterial color="transparent" opacity={0} transparent />
