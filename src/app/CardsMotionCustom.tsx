@@ -49,11 +49,18 @@ const CARDS = [
     {
         id: 1,
         name: "Quentin Mousset",
-        designation: "Directeur HDM Network & Bedev",
+        designation: "CEO @Bedev & Administrator @HDM Network ASBL",
         content: (
+            <>
             <p className="feedback__text">
-                <Highlight>Feedback en attente ...</Highlight>
+                Benjamin est un<Highlight> super collaborateur</Highlight>
             </p>
+                <p className="feedback__text">Durant son stage au sein de notre ASBL, il a su se démarquer par sa <Highlight>motivation</Highlight>, sa <Highlight>détermination</Highlight> et son <Highlight>professionnalisme</Highlight>.</p>
+                <p className="feedback__text">Nous l'avons d'ailleurs sélectionné pour s'associer avec nous sur l'un de nos projets.</p>
+                <p className="feedback__text">Il a depuis repris les rênes du développement de cette application.</p>
+                <p className="feedback__text">Si nous engagions, il ne fait aucun doute qu'il aurait déjà rejoint notre équipe.</p>
+                <p className="feedback__text">Ben est un développeur talentueux avec une grande <Highlight>volonté</Highlight> d'apprendre et d'évoluer, un <Highlight>curieux</Highlight> dans l'âme que je recommande aux entreprises en recherche de ninja du code.</p>
+            </>
         ),
     },
 
