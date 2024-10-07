@@ -1,145 +1,35 @@
-@import "mixin";
 .contact {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 100%;
-font-family: CooperHewitt, sans-serif;
-  //height: 100vh;
-  position: relative;
-  padding: 0.5rem 0.5rem 4rem 0.5rem;
-
-  &__boxTop {
-
-  }
-  &__card {
-    background-color: rgba(255, 255, 255, 0.11);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-
-  }
-  &__cardHeader {
-    color: #6A6A6A;
-
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-  &__cardDescription {
-    color: #6A6A6A;
-
-  }
-  &__label {
-    color: #6A6A6A;
-
-    font-weight: bold;
-  }
-
-  &__title {
-    color: #6A6A6A;
-    font-size: 2rem;
-
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
-  &__boxBottom {
-    display: flex;
-    gap: 1rem;
-
-  }
-  &__icon {
-    color: #6A6A6A;
-
-  }
-  &__boxIcon {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 0.5rem;
-    border: 1px solid rgba(205, 205, 205, 0.62);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.11);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  }
   &__form {
+    width: 100%;
+    height: 100%;
+
+  }
+  &__topContainer {
     display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
+    width: 100%;
+    gap: 1rem;
+  }
+  &__boxInputTop {
+    width: 50%;
+    position: relative;
+  }
+  &__boxErrors {
+    position: absolute;
+    bottom: -1.2rem;
+    display: flex;
+    margin-top: 0.3rem;
   }
   &__boxInput {
     position: relative;
-    width: 100%;
+    margin-top: 1rem;
   }
   &__boxTextArea {
     position: relative;
-    width: 100%;
+    margin-top: 1rem;
   }
-  &__boxErrors {
+  &__boxSubmit {
+    margin-top: 1rem;
     display: flex;
-    align-items: center;
-    height: 1rem;
-    margin-top: 0.5rem;
-  }
-}
-
-@include mediumDevices {
-  .contact {
-    padding: 7rem;
-    &__label {
-
-    }
-    &__boxSubmit {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-    }
-    &__submit {
-
-      width: 10rem;
-    }
-
-  }
-
-}
-@include bigDevices {
-  .contact {
-    padding: 7rem;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    &__boxTop {
-      width: 95%;
-    }
-    &__boxBottom {
-      width: 5%;
-      display: flex;
-      flex-direction: column;
-    }
-    &__boxInput {
-      position: relative;
-      width: 50%;
-    }
-    &__boxTextArea {
-      position: relative;
-      width: 100%;
-    }
-    &__boxErrors {
-      display: flex;
-      align-items: center;
-      height: 1rem;
-      margin-top: 0.5rem;
-    }
-  }
-  .separatorHorizontal {
-    display: none;
-  }
-  .separatorVertical {
-    display: block;
-    height: auto;
-    width: 1px;
-
+    justify-content: flex-end;
   }
 }

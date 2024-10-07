@@ -7,6 +7,7 @@ import React, {useState} from "react";
 import {Button} from "@/app/components/ui/Button";
 import {OctagonX} from "lucide-react";
 import {useToast} from "@/app/components/ui/useToast";
+import './Contact.scss'
 
 interface IData {
     name: string;
@@ -75,7 +76,10 @@ export default function ContactForm() {
     return(
 
         <form className='contact__form' onSubmit={handleSubmit}>
-            <div className='contact__boxInput'>
+            <div className="contact__topContainer" >
+
+
+            <div className='contact__boxInputTop'>
                 <Label className="contact__label">Nom:</Label>
                 <Input className="contact__input" onChange={(event) => handleInputChange(event, 'name')}></Input>
                 <div className='contact__boxErrors'>
@@ -87,7 +91,7 @@ export default function ContactForm() {
                     }
                 </div>
             </div>
-            <div className='contact__boxInput'>
+            <div className='contact__boxInputTop'>
                 <Label className="contact__label">Prénom:</Label>
                 <Input className="contact__input" onChange={(event) => handleInputChange(event, 'surname')}></Input>
                 <div className='contact__boxErrors'>
@@ -98,6 +102,7 @@ export default function ContactForm() {
                         </>
                     }
                 </div>
+            </div>
             </div>
             <div className='contact__boxInput'>
                 <Label className="contact__label">Email:</Label>

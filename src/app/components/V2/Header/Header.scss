@@ -1,0 +1,61 @@
+.header {
+  height: 3.5rem;
+  width: calc(100% - 12rem);
+  display: flex;
+  position: absolute;
+  top: 2rem;
+  right: 6rem;
+  z-index: 10;
+  &__boxLeft {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+  }
+  &__title {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+
+  }
+  &__boxRight {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+  }
+  &__linksList {
+    display: flex;
+    gap: 1rem;
+
+
+  }
+  &__link {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    position: relative;
+    text-decoration: none;
+
+
+  }
+  &__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease-in-out;
+  }
+  &__link:hover::after {
+    width: 100%;
+  }
+  &__link:hover::before {
+    width: 100%;
+  }
+}

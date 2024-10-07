@@ -1,0 +1,41 @@
+.feedbacks {
+  height: 80vh;
+  width: 100%;
+  border-radius: 9rem 9rem 0 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  font-family: 'Aileron', sans-serif;
+  &__title {
+   font-size: 2rem;
+    color: #575757;
+    font-weight: 600;
+  }
+  &__cardsContainer {
+    width: 80%;
+    display: flex;
+    margin-top: 4rem;
+    gap: 8rem;
+  }
+  &__card {
+    width: 50%;
+    height: 20rem;
+    color: #575757
+
+  }
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 2rem;
+    color: #575757
+  }
+  &__boxAuthor {
+    color: #575757;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+}

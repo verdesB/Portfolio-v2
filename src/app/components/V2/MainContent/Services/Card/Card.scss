@@ -1,0 +1,16 @@
+.card {
+  height: 27rem;
+  width: 27rem;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  &__listItems {
+    flex: 1;
+    margin-top: 2rem;
+
+  }
+  &__item {
+    margin-top: 0.5rem;
+
+  }
+}

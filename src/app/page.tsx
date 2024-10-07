@@ -1,21 +1,19 @@
 
-import './header.scss'
+
 import Nav from "@/app/nav";
-import Header from "@/app/header";
-import HomeSection from "@/app/SectionHome";
-import AboutSection from "@/app/SectionAbout";
-import {Separator} from "@/app/components/ui/Separator";
-import ProjectSection from "@/app/SectionProject";
-import FeedBackSection from "@/app/SectionFeedBack";
-import SkillsSection from "@/app/SectionSkills";
-import ContactSection from "@/app/SectionContact";
+
+
 import './main.scss'
 
-import HeaderSection from "@/app/SectionHeader";
+
 import {Toaster} from "@/app/components/ui/Toaster";
-import Footer from "@/app/Footer";
-import SectionProjects from "@/app/SectionProjects";
-import SceneFallingObjects from "@/app/components/3D/Scenes/SceneFallingObjects";
+
+import Header from "@/app/components/V2/Header/Header";
+import HomeSection from "@/app/components/V2/Home/Home";
+import Stack from "@/app/components/V2/Stack/Stack";
+import MainContent from "@/app/components/V2/MainContent/MainContent";
+import FeedBacks from "@/app/components/V2/FeedBacks/FeedBacks";
+import Contact from "@/app/components/V2/Contact/Contact";
 
 
 
@@ -24,23 +22,18 @@ export default function Home() {
   return (
 
       <div className="main-container">
-          <HeaderSection/>
+        <Header/>
 
           <main  className="flex  flex-col items-center justify-between main">
               <HomeSection/>
-              <Separator style={{width: '80%'}}/>
-              <AboutSection/>
-              <Separator style={{width: '80%'}}/>
-              <SectionProjects/>
-              <Separator style={{width: '80%'}}/>
-              <SkillsSection/>
-              <Separator style={{width: '80%'}}/>
-              <FeedBackSection/>
-              <Separator style={{width: '80%'}}/>
-              <ContactSection/>
+              <Stack/>
+              <MainContent/>
+              <div style={{position: 'relative'}}>
+                  <FeedBacks/>
+                  <Contact/>
+              </div>
 
-        </main>
-
+          </main>
           <Toaster/>
       </div>
 

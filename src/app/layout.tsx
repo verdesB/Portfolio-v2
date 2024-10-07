@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import React from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import './global.scss'
+import './main.scss'
+import image from "../../public/react-native.jpg";
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
-    <body className={inter.className}>{children}</body>
+    <html lang="fr" className="no-visible-scrollbar">
+    <body className={`${inter.className} no-visible-scrollbar`}>{children}</body>
     </html>
   );
 }

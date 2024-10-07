@@ -1,0 +1,57 @@
+.home {
+  height: 80vh;
+  background-color: #bfbfbf;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10rem 10rem;
+  z-index: 2;
+  background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 13px,rgba(0,0,0,0.03) 13px, rgba(0,0,0,0.03) 24px,transparent 24px, transparent 62px,rgba(0,0,0,0.03) 62px, rgba(0,0,0,0.03) 96px),repeating-radial-gradient(circle at center center, rgb(255,255,255) 0px, rgb(255,255,255) 14px,rgb(255,255,255) 14px, rgb(255,255,255) 18px,rgb(255,255,255) 18px, rgb(255,255,255) 28px,rgb(255,255,255) 28px, rgb(255,255,255) 32px); background-size: 21px 21px;
+  &__container {
+    width: 650px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  &__boxAvatar {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  &__avatar {
+    height: 9rem;
+    width: 9rem;
+    border: 3px solid white;
+  }
+  &__boxContent {
+    flex: 1;
+    width: 100%;
+
+  }
+  &__title {
+    color: #575757;
+    font-family: 'Aileron', sans-serif;
+    font-size: 56px;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 4rem;
+    width: 100%;
+
+
+  }
+  &__action{
+    height: 4rem;
+    width: 10rem;
+    border-radius: 2rem;
+
+  }
+}

@@ -24,11 +24,8 @@ export default function ContactSection() {
                     </CardHeader>
                     <CardContent>
                        <ContactForm/>
-
                     </CardContent>
-
                 </Card>
-
             </div>
             <Separator  className="separatorHorizontal"/>
             <Separator  className="separatorVertical"/>

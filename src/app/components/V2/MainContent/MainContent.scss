@@ -1,0 +1,61 @@
+.mainContent {
+  margin-top: 20vh;
+  font-family: 'Aileron', sans-serif;
+  padding-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  min-height: 100vh;
+
+  &__title {
+    color: #575757;
+    font-family: 'Aileron', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 4rem;
+    width: 100%;
+  }
+  &__subTitle {
+    color: #575757;
+
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 4rem;
+    width: 100%;
+  }
+  &__projectBox {
+    min-height: 500px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__boxAboutText {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem;
+    width: 70%;
+    color: #575757
+  }
+  &__subBoxText {
+    display: flex;
+    gap: 4rem;
+
+  }
+  &__text {
+    width: 50%;
+    margin: 0 0 0 auto;
+    font-size: 1.2rem;
+  }
+  &__lastText {
+    font-size: 1.2rem;
+  }
+}
