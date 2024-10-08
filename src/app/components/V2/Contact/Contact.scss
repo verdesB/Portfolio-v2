@@ -38,7 +38,7 @@ border-radius: 7rem 7rem 0 0;
   &__card {
     width: 100%;
     height: 100%;
-    border-radius: 5rem;
+    border-radius: 6rem;
     padding: 2rem;
     @include respond-above(sm) {
       // Styles pour les appareils à partir de 600px
