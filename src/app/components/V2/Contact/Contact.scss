@@ -13,7 +13,7 @@ border-radius: 5rem 5rem 0 0;
   flex-direction: column;
   gap: 2rem;
   color: #575757;
-  height:110vh;
+
   @include respond-above(sm) {
     // Styles pour les appareils à partir de 600px
 
