@@ -29,7 +29,7 @@ const Footer = () => {
             <div className='footer__cvBox'>
                 <h4 className='footer__cvTitle'>Mon Cv:</h4>
 
-                <Button><a href='/CV_BenjaminV.pdf' target='_blank' rel='noopener noreferrer'>Jeter un coup d&apos; oeil</a><ExternalLink style={{height: '1rem',marginLeft: '0.5rem'}}/></Button>
+                <Button><a href='/CV_verdesBenj.pdf' target='_blank' rel='noopener noreferrer'>Jeter un coup d&apos; oeil</a><ExternalLink style={{height: '1rem',marginLeft: '0.5rem'}}/></Button>
             </div>
 
             <Separator className="my-4"/>
