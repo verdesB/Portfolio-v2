@@ -1,22 +1,75 @@
+@import "../mixin.scss";
 .header {
   height: 3.5rem;
-  width: calc(100% - 12rem);
+  width: calc(100% - 4rem);
   display: flex;
   position: absolute;
   top: 2rem;
-  right: 6rem;
+  right: 2rem;
   z-index: 10;
+  @include respond-above(sm) {
+    // Styles pour les appareils à partir de 600px
+  }
+
+  @include respond-above(md) {
+    // Styles pour les appareils à partir de 900px
+    width: calc(100% - 12rem);
+    right: 6rem;
+  }
+
+  @include respond-above(lg) {
+    // Styles pour les appareils à partir de 1200px
+  }
+
+  @include respond-above(xl) {
+    // Styles pour les appareils à partir de 1920px
+  }
   &__boxLeft {
     width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+    }
+
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
 
   }
   &__title {
     font-family: 'Aileron', sans-serif;
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 800;
+    font-style: italic;
+    color: #575757;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+    }
+
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+      font-size: 1.5rem;
+      font-weight: 800;
+      font-style: italic;
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
 
   }
   &__boxRight {
@@ -25,20 +78,70 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+    }
+
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
 
   }
   &__linksList {
-    display: flex;
-    gap: 1rem;
+    display: none;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+      display: flex;
+      gap: 1rem;
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
 
 
   }
   &__link {
+    display: none;
     font-family: 'Aileron', sans-serif;
     font-size: 1.2rem;
     font-weight: 200;
     position: relative;
     text-decoration: none;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+      display: block;
+    }
+
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
+
 
 
   }

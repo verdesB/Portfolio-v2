@@ -1,16 +1,65 @@
+@import "../../../mixin.scss";
 .card {
-  height: 27rem;
+height: 40rem;
   width: 27rem;
   background-color: rgba(255,255,255,0.5);
   backdrop-filter: blur(10px);
   padding: 1rem;
+  @include respond-above(sm) {
+    // Styles pour les appareils à partir de 600px
+  }
+
+  @include respond-above(md) {
+    // Styles pour les appareils à partir de 900px
+    height: 27rem;
+  }
+
+  @include respond-above(lg) {
+    // Styles pour les appareils à partir de 1200px
+  }
+
+  @include respond-above(xl) {
+    // Styles pour les appareils à partir de 1920px
+  }
   &__listItems {
     flex: 1;
     margin-top: 2rem;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+    }
+
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
 
   }
   &__item {
     margin-top: 0.5rem;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+    }
+
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
 
   }
 }

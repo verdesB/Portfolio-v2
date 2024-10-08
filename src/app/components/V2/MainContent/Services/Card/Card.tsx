@@ -71,7 +71,7 @@ const CardCustom = () => {
                 <Card
                     key={index}
                     style={{
-                        height: '27rem',
+                        height: '30rem',
                         width: '27rem',
                         backgroundColor: 'rgba(255,255,255,0.5)',
                         backdropFilter: 'blur(10px)',

@@ -1,7 +1,7 @@
 import './MainContent.scss'
 import {ExpandableCardDemo} from "@/app/components/ui/GridProjects";
 import {Separator} from "@/app/components/ui/Separator";
-import {Highlight} from "@/app/CardsMotionCustom";
+import Highlight from "@/app/components/ui/Highlight";
 import {BatteryCharging, ContactRound, HandHeart, Target} from "lucide-react";
 import {GoogleGeminiEffect} from "@/app/components/ui/GeminiEffect";
 import Services from "@/app/components/V2/MainContent/Services/Services";

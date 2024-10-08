@@ -1,21 +1,61 @@
+@import "../mixin.scss";
 .contact {
   position: absolute;
-  bottom: -35rem;
-  height: 720px;
+  bottom: -85rem;
   width: 100%;
   font-family: 'Aileron', sans-serif;
   background-color: #ffffff;
   z-index: 10;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 9rem 9rem 0 0;
+border-radius: 5rem 5rem 0 0;
   padding: 2rem;
   display: flex;
+  flex-direction: column;
   gap: 2rem;
+  color: #575757;
+  @include respond-above(sm) {
+    // Styles pour les appareils à partir de 600px
+
+  }
+
+  @include respond-above(md) {
+    // Styles pour les appareils à partir de 900px
+    bottom: -35rem;
+    height: 720px;
+    border-radius: 9rem 9rem 0 0;
+    flex-direction: row;
+  }
+
+  @include respond-above(lg) {
+    // Styles pour les appareils à partir de 1200px
+  }
+
+  @include respond-above(xl) {
+    // Styles pour les appareils à partir de 1920px
+  }
   &__card {
-    width: 50%;
+    width: 100%;
     height: 100%;
-    border-radius: 7rem 2rem 2rem 2rem;
+    border-radius: 3rem;
     padding: 2rem;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+      width: 50%;
+      border-radius: 7rem 2rem 2rem 2rem;
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
   }
   &__boxTop {
     display: flex;
@@ -24,12 +64,46 @@
     gap: 1rem;
     height: 4rem;
     width: 100%;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
 
   }
   &__icon {
     height: 3rem;
     width: 3rem;
     color: #575757;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
 
   }
   &__title {

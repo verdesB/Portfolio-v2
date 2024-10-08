@@ -1,5 +1,14 @@
-import {Linkedin} from "lucide-react";
+import {Linkedin, Menu} from "lucide-react";
 import './Header.scss'
+import {
+    DropdownMenu, DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger
+} from "@/app/components/ui/DropdownMenu";
+import NavMobile from "@/app/components/V2/Header/NavMobile/NavMobile";
+
 
 const Header = () => {
     console.log()
@@ -17,6 +26,7 @@ const Header = () => {
                     <li className="header__link"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <NavMobile/>
         </header>
     )
 }

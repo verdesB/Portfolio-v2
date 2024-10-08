@@ -1,6 +1,6 @@
 import {Card} from "@/app/components/ui/Card";
 import {Car, Quote} from "lucide-react";
-import {Highlight} from "@/app/CardsMotionCustom";
+import Highlight from "@/app/components/ui/Highlight";
 import oclock from '../../../../../public/oclock.png'
 import {Avatar} from "@/app/components/ui/Avatar";
 import Image from 'next/image';

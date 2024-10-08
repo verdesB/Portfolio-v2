@@ -1,0 +1,117 @@
+@import "../../mixin.scss";
+.nav-mobile {
+  position: relative;
+  @include respond-above(sm) {
+    // Styles pour les appareils à partir de 600px
+
+  }
+
+  @include respond-above(md) {
+    // Styles pour les appareils à partir de 900px
+    display: none;
+  }
+
+  @include respond-above(lg) {
+    // Styles pour les appareils à partir de 1200px
+  }
+
+  @include respond-above(xl) {
+    // Styles pour les appareils à partir de 1920px
+  }
+
+  &__toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+    position: relative;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+      display: none;
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 100%;
+    right: -1rem;
+    background-color: #efefef;
+    padding: 0.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    height: 700px;
+    max-width: 0;
+    opacity: 0;
+    border-radius: 1rem;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+      display: none;
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
+
+    &.open {
+      max-height: 700px; // Ajustez selon vos besoins
+      max-width: calc(100vw - 2rem); // Ajustez selon vos besoins
+      opacity: 1;
+    }
+  }
+}
+
+.header__linksListMobile {
+  list-style-type: none;
+  padding: 2rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: calc(100vw - 2rem);
+  @include respond-above(sm) {
+    // Styles pour les appareils à partir de 600px
+
+  }
+  @include respond-above(md) {
+    // Styles pour les appareils à partir de 900px
+    display: none;
+  }
+
+  @include respond-above(lg) {
+    // Styles pour les appareils à partir de 1200px
+  }
+
+  @include respond-above(xl) {
+    // Styles pour les appareils à partir de 1920px
+  }
+}
+
+.header__linkMobile {
+  padding: 10px;
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+}

@@ -1,23 +1,58 @@
+@import "../mixin.scss";
 .mainContent {
   margin-top: 20vh;
   font-family: 'Aileron', sans-serif;
-  padding-top: 4rem;
+  padding: 4rem 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 4rem;
   align-items: center;
   min-height: 100vh;
+  @include respond-above(sm) {
+    // Styles pour les appareils à partir de 600px
+
+  }
+  @include respond-above(md) {
+    // Styles pour les appareils à partir de 900px
+    padding-top: 4rem;
+
+  }
+
+  @include respond-above(lg) {
+    // Styles pour les appareils à partir de 1200px
+  }
+
+  @include respond-above(xl) {
+    // Styles pour les appareils à partir de 1920px
+  }
 
   &__title {
     color: #575757;
     font-family: 'Aileron', sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
     font-weight: 600;
     font-style: normal;
     line-height: 4rem;
     width: 100%;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+      font-size: 40px;
+
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
   }
   &__subTitle {
     color: #575757;
@@ -28,6 +63,23 @@
     font-style: normal;
     line-height: 4rem;
     width: 100%;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+
+
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
   }
   &__projectBox {
     min-height: 500px;
@@ -35,27 +87,118 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+
+
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
   }
 
   &__boxAboutText {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    padding: 2rem;
-    width: 70%;
-    color: #575757
+
+    width: 100%;
+    color: #575757;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+      padding: 2rem;
+      width: 90%;
+
+
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+      width: 70%;
+    }
   }
   &__subBoxText {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     gap: 4rem;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+flex-direction: row;
+
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
 
   }
   &__text {
-    width: 50%;
+    width: 100%;
     margin: 0 0 0 auto;
     font-size: 1.2rem;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+      width: 50%;
+      margin: 0 0 0 auto;
+
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
   }
   &__lastText {
     font-size: 1.2rem;
+    @include respond-above(sm) {
+      // Styles pour les appareils à partir de 600px
+
+    }
+    @include respond-above(md) {
+      // Styles pour les appareils à partir de 900px
+
+
+    }
+
+    @include respond-above(lg) {
+      // Styles pour les appareils à partir de 1200px
+    }
+
+    @include respond-above(xl) {
+      // Styles pour les appareils à partir de 1920px
+    }
   }
 }

@@ -25,7 +25,7 @@ export const GoogleGeminiEffect = ({
         <div className={cn("sticky top-80 bg-white", className)}>
 
 
-            <div className="w-full h-[890px] -top-60 md:-top-40  flex items-center justify-center gap-6 bg-red-transparent absolute z-20 flex-wrap">
+            <div className="w-full h-[890px] -top-60 md:-top-40  flex items-center justify-center gap-6 bg-red-transparent absolute z-20 flex-wrap overflow-y-scroll no-visible-scrollbar">
                <CardCustom/>
 
             </div>

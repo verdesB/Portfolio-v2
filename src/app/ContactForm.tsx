@@ -7,7 +7,6 @@ import React, {useState} from "react";
 import {Button} from "@/app/components/ui/Button";
 import {OctagonX} from "lucide-react";
 import {useToast} from "@/app/components/ui/useToast";
-import './Contact.scss'
 
 interface IData {
     name: string;
@@ -132,7 +131,7 @@ export default function ContactForm() {
                 </div>
 
             </div>
-            <div className="contact__boxSubmit">
+            <div className="flex justify-end mt-4">
 
 
             <Button className="contact__submit" variant={"outline"} type='submit'>Envoyer</Button>

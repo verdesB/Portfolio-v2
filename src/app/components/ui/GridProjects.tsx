@@ -136,7 +136,7 @@ export function ExpandableCardDemo() {
                         layoutId={`card-${card.title}-${id}`}
                         key={card.title}
                         onClick={() => setActive(card)}
-                        className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer h-802 w-[30rem]"
+                        className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer h-802 w-full md:w-[30rem]"
                     >
                         <div className="flex gap-4 flex-col  w-full">
                             <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -209,32 +209,15 @@ const cards = [
         title: "Webtune",
         src: webtune.src,
         ctaText: "Visit",
-        ctaLink: "https://ui.aceternity.com/templates",
+        ctaLink: "/",
         content: () => {
+
             return (
                 <p className="no-visible-scrollbar max-h-[20rem]">
-                    Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-                    her melancholic and cinematic music style. Born Elizabeth Woolridge
-                    Grant in New York City, she has captivated audiences worldwide with
-                    her haunting voice and introspective lyrics. <br /> <br /> Her songs
-                    often explore themes of tragic romance, glamour, and melancholia,
-                    drawing inspiration from both contemporary and vintage pop culture.
-                    With a career that has seen numerous critically acclaimed albums, Lana
-                    Del Rey has established herself as a unique and influential figure in
-                    the music industry, earning a dedicated fan base and numerous
-                    accolades.
-                    Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-                    her melancholic and cinematic music style. Born Elizabeth Woolridge
-                    Grant in New York City, she has captivated audiences worldwide with
-                    her haunting voice and introspective lyrics. <br /> <br /> Her songs
-                    often explore themes of tragic romance, glamour, and melancholia,
-                    drawing inspiration from both contemporary and vintage pop culture.
-                    With a career that has seen numerous critically acclaimed albums, Lana
-                    Del Rey has established herself as a unique and influential figure in
-                    the music industry, earning a dedicated fan base and numerous
-                    accolades.
+                    Si vous voyez ce message , en espérant avoir amples informations sur ce projet , je suis dans le regret de vous annoncer que malheuresement , je suis a l'heure ou je vous parle en train de mettre à jour le portfolio sur lequel vous vous trouvez
 
                 </p>
+
             );
         },
     },
@@ -243,29 +226,15 @@ const cards = [
         title: "Galerie d'art 3D",
         src: galerie.src,
         ctaText: "Visit",
-        ctaLink: "https://ui.aceternity.com/templates",
+        ctaLink: "https://showroom-rtf.vercel.app/",
         content: () => {
             return (
+                <>
                 <p className="no-visible-scrollbar max-h-[20rem]">
-                    Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-                    voice and profound lyrics that resonate deeply with his audience. Born
-                    in the village of Khant Maanpur in Punjab, India, he has become a
-                    cultural icon in the Punjabi music industry. <br /> <br /> His songs
-                    often reflect the struggles and triumphs of everyday life, capturing
-                    the essence of Punjabi culture and traditions. With a career spanning
-                    over two decades, Babu Maan has released numerous hit albums and
-                    singles that have garnered him a massive fan following both in India
-                    and abroad.
-                    Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-                    voice and profound lyrics that resonate deeply with his audience. Born
-                    in the village of Khant Maanpur in Punjab, India, he has become a
-                    cultural icon in the Punjabi music industry. <br /> <br /> His songs
-                    often reflect the struggles and triumphs of everyday life, capturing
-                    the essence of Punjabi culture and traditions. With a career spanning
-                    over two decades, Babu Maan has released numerous hit albums and
-                    singles that have garnered him a massive fan following both in India
-                    and abroad.s
+                    Si vous voyez ce message , en espérant avoir amples informations sur ce projet , je suis dans le regret de vous annoncer que malheuresement , je suis a l'heure ou je vous parle en train de mettre à jour le portfolio sur lequel vous vous trouvez
                 </p>
+                <p>Mais sur ce projet vous pouvez le tester en cliquant sur le bouton </p>
+                </>
             );
         },
     },

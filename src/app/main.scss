@@ -1,10 +1,10 @@
 @import "mixin";
-@include veryBigDevices {
+
   main {
     background-color: #ffffff;
   }
 
-}
+
 html {
   scroll-behavior: smooth;
 }
