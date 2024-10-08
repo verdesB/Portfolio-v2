@@ -6,7 +6,7 @@
   font-family: 'Aileron', sans-serif;
   background-color: #ffffff;
   z-index: 10;
-
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
   padding: 0.5rem;
   display: flex;
@@ -24,7 +24,7 @@
     bottom: -35rem;
     height: 720px;
     border-radius: 9rem 9rem 0 0;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
     flex-direction: row;
     padding: 2rem;
   }
@@ -41,6 +41,7 @@
     height: 100%;
     border-radius: 6rem;
     padding: 2rem;
+    box-shadow: none;
     @include respond-above(sm) {
       // Styles pour les appareils à partir de 600px
 
