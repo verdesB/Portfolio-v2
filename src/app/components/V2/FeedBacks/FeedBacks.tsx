@@ -22,17 +22,17 @@ const FeedBacks = () => {
                         sa <Highlight>motivation</Highlight>, sa <Highlight>détermination</Highlight> et
                         son <Highlight>professionnalisme</Highlight>.</p>
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    <p >Nous l'avons d'ailleurs sélectionné pour s'associer avec nous sur l'un
+                    <p >Nous l&apos; avons d&apos; ailleurs sélectionné pour s&apos; associer avec nous sur l&apos; un
                         de nos projets.</p>
                     <p >Il a depuis repris les rênes du développement de cette
                         application.</p>
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    <p >Si nous engagions, il ne fait aucun doute qu'il aurait déjà rejoint
+                    <p >Si nous engagions, il ne fait aucun doute qu&apos;il aurait déjà rejoint
                         notre équipe.</p>
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
                     <p >Ben est un développeur talentueux avec une
-                        grande <Highlight>volonté</Highlight> d'apprendre et d'évoluer,
-                        un <Highlight>curieux</Highlight> dans l'âme que je recommande aux entreprises en recherche de
+                        grande <Highlight>volonté</Highlight> d&apos;apprendre et d&apos;évoluer,
+                        un <Highlight>curieux</Highlight> dans l&apos;âme que je recommande aux entreprises en recherche de
                         ninja du code.</p>
                     <div className="feedbacks__boxAuthor">
                         <Avatar><Image src={bedev} alt="bedev"/></Avatar>
@@ -49,7 +49,7 @@ const FeedBacks = () => {
                         ton <Highlight>professionnalisme</Highlight> ont clairement marqué le jury.</p>
                     <p> Ces qualités sont des atouts majeurs dans le monde professionnel,
                         surtout dans le secteur du développement web et web mobile. Elles témoignent de ta capacité à
-                        t’engager pleinement dans tes projets et à travailler en équipe, des compétences très appréciées
+                        t&apos;engager pleinement dans tes projets et à travailler en équipe, des compétences très appréciées
                         dans le milieu.</p>
                     <p>Benjamin, tu as démontré une très <Highlight>belle
                         personnalité</Highlight> et un gros potentiel lors de ta présentation.</p>
@@ -60,7 +60,7 @@ const FeedBacks = () => {
                     <div className="feedbacks__boxAuthor">
                         <Avatar><Image src={oclock} alt="oclock"/></Avatar>
                         <div>
-                        <p>O'Clock</p>
+                        <p>O&apos;Clock</p>
                         <p>Le jury</p>
                         </div>
                     </div>

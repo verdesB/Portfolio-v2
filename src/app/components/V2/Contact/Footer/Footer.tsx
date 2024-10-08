@@ -28,12 +28,13 @@ const Footer = () => {
             <Separator className="my-4"/>
             <div className='footer__cvBox'>
                 <h4 className='footer__cvTitle'>Mon Cv:</h4>
-                <Button><a href='/CV_BenjaminV.pdf' target='_blank' rel='noopener noreferrer'>Jeter un coup d'oeil</a><ExternalLink style={{height: '1rem',marginLeft: '0.5rem'}}/></Button>
+
+                <Button><a href='/CV_BenjaminV.pdf' target='_blank' rel='noopener noreferrer'>Jeter un coup d&apos; oeil</a><ExternalLink style={{height: '1rem',marginLeft: '0.5rem'}}/></Button>
             </div>
 
             <Separator className="my-4"/>
             <Card className='footer__card'>
-            <h4 className="footer__cardTitle">Besoin de visuels? d'un branding ?</h4>
+            <h4 className="footer__cardTitle">Besoin de visuels? d&apos; un branding ?</h4>
                 <div className="footer__cardBox">
                     <Avatar className="footer__avatar"><Image src={daniel} alt="moi"/></Avatar>
                     <div>

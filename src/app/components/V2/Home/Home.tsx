@@ -14,7 +14,7 @@ const HomeSection = () => {
                 </div>
                 <div className="home__boxContent">
                     <h1 className="home__title">
-                        Concepteur de solutions et d'expériences numériques
+                        Concepteur de solutions et d&apos;expériences numériques
                     </h1>
                 </div>
                 <Button className="home__action"><a href="#projects">Dernier projets</a></Button>

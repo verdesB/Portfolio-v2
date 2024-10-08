@@ -10,6 +10,7 @@ import graphql from '../../../../../public/graphql.png';
 import nest from '../../../../../public/nest.png';
 import prisma from '../../../../../public/prisma.png';
 import postgres from '../../../../../public/postgres.png';
+import Image from "next/image";
 
 const Stack = () => {
     const images = [
@@ -49,7 +50,7 @@ const Stack = () => {
                         className="stack__item"
                         style={{ display: 'inline-block', width: imageWidth }}
                     >
-                        <img
+                        <Image
                             src={image.src.src}
                             alt={image.alt}
                             className="stack__image"

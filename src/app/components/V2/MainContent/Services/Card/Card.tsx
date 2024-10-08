@@ -12,8 +12,8 @@ const CardCustom = () => {
                     projet
                 </li>
                 <li className="card__item">Analyse appronfondie de votre cahier des charges</li>
-                {/* eslint-disable-next-line react/no-unescaped-entities */}
-                <li className="card__item">Elaboration d\'une maquette graphique responsive afin de définir
+
+                <li className="card__item">Elaboration d&apos;une maquette graphique responsive afin de définir
                     clairement les contours du projet
                 </li>
                 <li className="card__item">Selon le type de projet, Création du schéma de la base de données</li>
@@ -28,7 +28,7 @@ const CardCustom = () => {
             description:
                 <ul className="card__listItems">
 
-                <li className="card__item">Conception d'une structure de base pour l’interface utilisateur, en
+                <li className="card__item">Conception d&apos;une structure de base pour l’interface utilisateur, en
                     tenant compte de l’ergonomie et de l’expérience utilisateur.
                 </li>
 
