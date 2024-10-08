@@ -50,11 +50,13 @@ const Stack = () => {
                         className="stack__item"
                         style={{ display: 'inline-block', width: imageWidth }}
                     >
+
                         <Image
                             src={image.src.src}
                             alt={image.alt}
                             className="stack__image"
-                            style={{ width: '100%' }} // Assure que chaque image prend 100% de sa taille assignée
+                            style={{ width: '100%' }}
+                            layout="responsive" width={16} height={9}
                         />
                     </div>
                 ))}
