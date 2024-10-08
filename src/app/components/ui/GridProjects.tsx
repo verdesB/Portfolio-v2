@@ -214,7 +214,7 @@ const cards = [
 
             return (
                 <p className="no-visible-scrollbar max-h-[20rem]">
-                    Si vous voyez ce message , en espérant avoir amples informations sur ce projet , je suis dans le regret de vous annoncer que malheuresement , je suis a l'heure ou je vous parle en train de mettre à jour le portfolio sur lequel vous vous trouvez
+                    Si vous voyez ce message , en espérant avoir amples informations sur ce projet , je suis dans le regret de vous annoncer que malheuresement , je suis a l&apos;heure ou je vous parle en train de mettre à jour le portfolio sur lequel vous vous trouvez
 
                 </p>
 
@@ -231,7 +231,7 @@ const cards = [
             return (
                 <>
                 <p className="no-visible-scrollbar max-h-[20rem]">
-                    Si vous voyez ce message , en espérant avoir amples informations sur ce projet , je suis dans le regret de vous annoncer que malheuresement , je suis a l'heure ou je vous parle en train de mettre à jour le portfolio sur lequel vous vous trouvez
+                    Si vous voyez ce message , en espérant avoir amples informations sur ce projet , je suis dans le regret de vous annoncer que malheuresement , je suis a l&apos;heure ou je vous parle en train de mettre à jour le portfolio sur lequel vous vous trouvez
                 </p>
                 <p>Mais sur ce projet vous pouvez le tester en cliquant sur le bouton </p>
                 </>
