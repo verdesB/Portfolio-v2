@@ -24,7 +24,7 @@ const Contact = () => {
 
 
             </Card>
-            <Separator orientation="vertical" style={{height:'100%', width: '1px'}}/>
+
             <Footer/>
 
         </section>
