@@ -6,8 +6,8 @@
   font-family: 'Aileron', sans-serif;
   background-color: #ffffff;
   z-index: 10;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-border-radius: 7rem 7rem 0 0;
+
+
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,7 @@ border-radius: 7rem 7rem 0 0;
     bottom: -35rem;
     height: 720px;
     border-radius: 9rem 9rem 0 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     flex-direction: row;
     padding: 2rem;
   }
