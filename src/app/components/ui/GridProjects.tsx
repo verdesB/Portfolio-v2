@@ -5,10 +5,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "../../hooks/useOutsideClick";
 import webtune from '../../../../public/logo.png'
 import galerie from '../../../../public/showroomRTF.png'
-import {Avatar} from "@/app/components/ui/Avatar";
+
 import threejs from '../../../../public/three.png'
 import nextjs from '../../../../public/next-js.svg'
-import videoThree from '../../../../public/threejs.mp4'
+
 import reactIcon from '../../../../public/react.png'
 import graphql from '../../../../public/graphql.png'
 import nest from '../../../../public/nest.png'
