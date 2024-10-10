@@ -349,7 +349,7 @@ const cards = [
                         borderRadius: '2rem'
                     }}>
                         <video style={{height: "100%", width: '100%', borderRadius: '1.5rem',}} controls>
-                            <source style={{borderRadius: '1rem'}} src="/Galery3JS.mp4" type="video/mp4" />
+                            <source style={{borderRadius: '1rem'}} src="/threejs.mp4" type="video/mp4" />
 
                         </video>
 
