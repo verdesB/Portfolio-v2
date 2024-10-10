@@ -5,6 +5,25 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "../../hooks/useOutsideClick";
 import webtune from '../../../../public/logo.png'
 import galerie from '../../../../public/showroomRTF.png'
+import {Avatar} from "@/app/components/ui/Avatar";
+import threejs from '../../../../public/three.png'
+import nextjs from '../../../../public/next-js.svg'
+import videoThree from '../../../../public/threejs.mp4'
+import reactIcon from '../../../../public/react.png'
+import graphql from '../../../../public/graphql.png'
+import nest from '../../../../public/nest.png'
+import prisma from '../../../../public/prisma.png'
+import sql from '../../../../public/mySQL.png'
+import {
+    CalendarPlus2,
+    FilePenLine,
+    Folders,
+    HandPlatter,
+    LayoutDashboard,
+    ServerCog,
+    SquareLibrary
+} from "lucide-react";
+
 
 export function ExpandableCardDemo() {
     const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
@@ -88,13 +107,14 @@ export function ExpandableCardDemo() {
                                     <div className="">
                                         <motion.h3
                                             layoutId={`title-${active.title}-${id}`}
-                                            className="font-medium text-neutral-700 dark:text-neutral-200 text-base"
+                                            className="font-medium text-neutral-700 dark:text-neutral-200  text-3xl"
                                         >
                                             {active.title}
                                         </motion.h3>
                                         <motion.p
                                             layoutId={`description-${active.description}-${id}`}
-                                            className="text-neutral-600 dark:text-neutral-400 text-base"
+                                            className="text-neutral-600 dark:text-neutral-400 text-xl
+                                            "
                                         >
                                             {active.description}
                                         </motion.p>
@@ -118,7 +138,7 @@ export function ExpandableCardDemo() {
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         exit={{ opacity: 0 }}
-                                        className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                                        className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col max-h-[50vh] items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] no-visible-scrollbar"
                                     >
                                         {typeof active.content === "function"
                                             ? active.content()
@@ -213,10 +233,67 @@ const cards = [
         content: () => {
 
             return (
-                <p className="no-visible-scrollbar max-h-[20rem]">
-                    Si vous voyez ce message , en espérant avoir amples informations sur ce projet , je suis dans le regret de vous annoncer que malheuresement , je suis a l&apos;heure ou je vous parle en train de mettre à jour le portfolio sur lequel vous vous trouvez
+                <div style={{
+                    flex: 1,
+                    maxHeight: '80rem',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '2rem',
+                    marginBottom: '5rem'
+                }} className="no-visible-scrollbar">
+                    <ul style={{display: 'flex', height: '3rem', gap: "1rem", marginBottom: '2rem'}}>
+                        <li style={{height: '100%'}}><Image src={reactIcon} alt={"React JS"}
+                                                            style={{height: '100%', width: '3rem'}}/></li>
+                        <li style={{height: '100%'}}><Image style={{height: '100%', width: '3rem'}} src={graphql}
+                                                            alt={"GraphQL"}/></li>
+                        <li style={{height: '100%'}}><Image style={{height: '100%', width: '3rem'}} src={nest}
+                                                            alt={"Nest JS"}/></li>
+                        <li style={{height: '100%'}}><Image style={{height: '100%', width: '3rem'}} src={prisma}
+                                                            alt={"Prisma ORM"}/></li>
+                        <li style={{height: '100%'}}><Image style={{height: '100%', width: '3rem'}} src={sql}
+                                                            alt={"mySql"}/></li>
+                    </ul>
+                    <div>
+                        <h4 style={{fontSize: '1.5rem',marginBottom: '0.5rem'}}>Problématique :</h4>
+                        <p>
+                            Aujourd&apos;hui, la gestion des réseaux sociaux peut sembler très répétitive et chronophage. Lorsqu&apos;il s&apos;agit de gérer plusieurs réseaux sociaux, la tâche devient encore plus complexe, nécessitant de changer d&apos;application pour chaque publication, ce qui rend le processus inefficace et fastidieux.
+                            Et décourageant pour les personnes qui ne sont pas forcement en phase avec les réseaux sociaux tel que moi ! #Boomer
+                        </p>
 
-                </p>
+                    </div>
+                    <div style={{display: 'flex', gap: '1rem', flexDirection: 'column'}}>
+                        <h4 style={{fontSize: '1.5rem'}}>Solution et fonctionnalitées :</h4>
+
+                        <p>
+                            Pour répondre à cette problématique, j&apos;ai décidé de développer une application qui permettra de gérer tous les réseaux sociaux en un seul et même endroit. Cela vise à minimiser le processus fastidieux et répétitif tout en maximisant la présence de l&apos;utilisateur sur ses réseaux. Grâce à un formulaire, l&apos;utilisateur pourra créer plusieurs contenus de publication adaptés à chaque format et réseau. En centralisant ses différents réseaux sociaux, il sera possible d&apos;ajouter une couche d&apos;organisation avec la programmation des publications, permettant ainsi de gérer son organisation comme souhaité.
+                        </p>
+                        <ul style={{width: '100%'}}>
+                            <li style={{display: 'flex', alignItems: 'flex-start', gap:'0.5rem',margin: '0.5rem 0'}}><LayoutDashboard style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>
+                                Intégration d&apos;un dashboard</p>
+                            </li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '0.5rem 0'}}><CalendarPlus2 style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Intégration et implémentation d&apos;un calendrier éditorial, avec CRUD pour la publication</p></li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '0.5rem 0'}}><Folders style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Un espace regroupant tout les posts crées sur l&apos;application organisé par campagne</p></li>
+                            <li style={{display: 'flex', alignItems: 'flex-start',width: "100%", gap: '0.5rem',margin: '0.5rem 0'}}><FilePenLine style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Un espace d&apos;édition de publications, avec accès à L&apos;API de Unsplash pour des images libres de droits, et DALL-E pour la génération d&apos;images  par IA</p></li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '0.5rem 0'}}><SquareLibrary style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Un espace médiathèque permettant a l&apos;utilisateur de stocker de simages , afin de les éditer, avec les editeurs d&apos;images et video prevu pour la deuxième phase de développement du projet</p></li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '0.5rem 0'}}><ServerCog style={{width: '1.5rem', height: '1.5rem'}}/><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Développement du back end de l&apos;application en adéquation avec les fonctionnalitées présenté ci dessus</p></li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '0.5rem 0'}}><HandPlatter style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Application connecté avec Facebook, Instagram et LinkedIn. (Tiktok, snapchat,pinterest et X sont prévus à l&apos;avenir)</p></li>
+                        </ul>
+                    </div>
+
+                    <div style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: 'center',
+                        width: "100%",
+                        borderRadius: '2rem',
+                        boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'
+                    }}>
+                        <video style={{height: "100%", width: '100%', borderRadius: '1.5rem',boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}} controls>
+                            <source style={{borderRadius: '1rem'}} src="/webtune.mp4" type="video/mp4"/>
+                            Votre navigateur ne supporte pas la balise vidéo.
+                        </video>
+                    </div>
+                </div>
 
             );
         },
@@ -229,15 +306,60 @@ const cards = [
         ctaLink: "https://showroom-rtf.vercel.app/",
         content: () => {
             return (
-                <>
-                <p className="no-visible-scrollbar max-h-[20rem]">
-                    Si vous voyez ce message , en espérant avoir amples informations sur ce projet , je suis dans le regret de vous annoncer que malheuresement , je suis a l&apos;heure ou je vous parle en train de mettre à jour le portfolio sur lequel vous vous trouvez
-                </p>
-                <p>Mais sur ce projet vous pouvez le tester en cliquant sur le bouton </p>
-                </>
+                <div style={{
+                    flex: 1,
+                    maxHeight: '80rem',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '2rem',
+                    marginBottom: '5rem'
+                }} className="no-visible-scrollbar">
+                    <ul style={{display: 'flex', height: '3rem', gap: "1rem", marginBottom: '2rem'}}>
+                        <li style={{height: '100%'}}><Image src={nextjs} alt={"Next JS"}
+                                                            style={{height: '100%', width: '3rem'}}/></li>
+                        <li style={{height: '100%'}}><Image style={{height: '100%', width: '3rem'}} src={threejs}
+                                                            alt={"Three JS"}/></li>
+                    </ul>
+                    <div>
+                        <h4 style={{fontSize: '1.5rem',marginBottom: '0.5rem'}}>Problématique :</h4>
+                        <p>
+                            Si vous voyez ce message , en espérant avoir amples informations sur ce projet , je suis
+                            dans le regret de vous annoncer que malheuresement , je suis a l&apos;heure ou je vous parle
+                            en train de mettre à jour le portfolio sur lequel vous vous trouvez
+                        </p>
+
+                    </div>
+                    <div>
+                        <h4 style={{fontSize: '1.5rem',marginBottom: '0.5rem'}}>Solution et fonctionnalitées :</h4>
+
+                        <p>
+                            Si vous voyez ce message , en espérant avoir amples informations sur ce projet , je suis
+                            dans le
+                            regret de vous annoncer que malheuresement , je suis a l&apos;heure ou je vous parle en
+                            train de
+                            mettre à jour le portfolio sur lequel vous vous trouvez
+                        </p>
+                    </div>
+
+                    <div style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: 'center',
+                        width: "100%",
+                        borderRadius: '2rem'
+                    }}>
+                        <video style={{height: "100%", width: '100%', borderRadius: '1.5rem',}} controls>
+                            <source style={{borderRadius: '1rem'}} src="/Galery3JS.mp4" type="video/mp4" />
+
+                        </video>
+
+                    </div>
+                </div>
             );
         },
     },
 
 
 ];
+
+
