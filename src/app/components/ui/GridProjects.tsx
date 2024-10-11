@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "../../hooks/useOutsideClick";
 import webtune from '../../../../public/logo.png'
 import galerie from '../../../../public/showroomRTF.png'
-
 import threejs from '../../../../public/three.png'
 import nextjs from '../../../../public/next-js.svg'
 
@@ -13,7 +12,7 @@ import reactIcon from '../../../../public/react.png'
 import graphql from '../../../../public/graphql.png'
 import nest from '../../../../public/nest.png'
 import prisma from '../../../../public/prisma.png'
-import sql from '../../../../public/mySQL.png'
+import sql from '../../../../public/mySql.png'
 import {
     CalendarPlus2,
     FilePenLine,
@@ -138,7 +137,7 @@ export function ExpandableCardDemo() {
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         exit={{ opacity: 0 }}
-                                        className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col max-h-[50vh] items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] no-visible-scrollbar"
+                                        className="text-neutral-600 text-xs md:text-sm lg:text-base h-[90%] md:h-fit pb-10 flex flex-col max-h-[50vh] items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] no-visible-scrollbar"
                                     >
                                         {typeof active.content === "function"
                                             ? active.content()
@@ -254,8 +253,8 @@ const cards = [
                                                             alt={"mySql"}/></li>
                     </ul>
                     <div>
-                        <h4 style={{fontSize: '1.5rem',marginBottom: '0.5rem'}}>Problématique :</h4>
-                        <p>
+                        <h4 style={{fontSize: '1.5rem',marginBottom: '1rem'}}>Problématique :</h4>
+                        <p style={{fontSize: '1rem'}}>
                             Aujourd&apos;hui, la gestion des réseaux sociaux peut sembler très répétitive et chronophage. Lorsqu&apos;il s&apos;agit de gérer plusieurs réseaux sociaux, la tâche devient encore plus complexe, nécessitant de changer d&apos;application pour chaque publication, ce qui rend le processus inefficace et fastidieux.
                             Et décourageant pour les personnes qui ne sont pas forcement en phase avec les réseaux sociaux tel que moi ! #Boomer
                         </p>
@@ -264,19 +263,19 @@ const cards = [
                     <div style={{display: 'flex', gap: '1rem', flexDirection: 'column'}}>
                         <h4 style={{fontSize: '1.5rem'}}>Solution et fonctionnalitées :</h4>
 
-                        <p>
+                        <p style={{fontSize: '1rem'}}>
                             Pour répondre à cette problématique, j&apos;ai décidé de développer une application qui permettra de gérer tous les réseaux sociaux en un seul et même endroit. Cela vise à minimiser le processus fastidieux et répétitif tout en maximisant la présence de l&apos;utilisateur sur ses réseaux. Grâce à un formulaire, l&apos;utilisateur pourra créer plusieurs contenus de publication adaptés à chaque format et réseau. En centralisant ses différents réseaux sociaux, il sera possible d&apos;ajouter une couche d&apos;organisation avec la programmation des publications, permettant ainsi de gérer son organisation comme souhaité.
                         </p>
-                        <ul style={{width: '100%'}}>
-                            <li style={{display: 'flex', alignItems: 'flex-start', gap:'0.5rem',margin: '0.5rem 0'}}><LayoutDashboard style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>
+                        <ul style={{width: '100%',fontSize: '1rem'}}>
+                            <li style={{display: 'flex', alignItems: 'flex-start', gap:'0.5rem',margin: '1rem 0'}}><LayoutDashboard style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>
                                 Intégration d&apos;un dashboard</p>
                             </li>
-                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '0.5rem 0'}}><CalendarPlus2 style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Intégration et implémentation d&apos;un calendrier éditorial, avec CRUD pour la publication</p></li>
-                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '0.5rem 0'}}><Folders style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Un espace regroupant tout les posts crées sur l&apos;application organisé par campagne</p></li>
-                            <li style={{display: 'flex', alignItems: 'flex-start',width: "100%", gap: '0.5rem',margin: '0.5rem 0'}}><FilePenLine style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Un espace d&apos;édition de publications, avec accès à L&apos;API de Unsplash pour des images libres de droits, et DALL-E pour la génération d&apos;images  par IA</p></li>
-                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '0.5rem 0'}}><SquareLibrary style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Un espace médiathèque permettant a l&apos;utilisateur de stocker de simages , afin de les éditer, avec les editeurs d&apos;images et video prevu pour la deuxième phase de développement du projet</p></li>
-                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '0.5rem 0'}}><ServerCog style={{width: '1.5rem', height: '1.5rem'}}/><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Développement du back end de l&apos;application en adéquation avec les fonctionnalitées présenté ci dessus</p></li>
-                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '0.5rem 0'}}><HandPlatter style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Application connecté avec Facebook, Instagram et LinkedIn. (Tiktok, snapchat,pinterest et X sont prévus à l&apos;avenir)</p></li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '1rem 0'}}><CalendarPlus2 style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Intégration et implémentation d&apos;un calendrier éditorial, avec CRUD pour la publication</p></li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '1rem 0'}}><Folders style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Un espace regroupant tout les posts crées sur l&apos;application organisé par campagne</p></li>
+                            <li style={{display: 'flex', alignItems: 'flex-start',width: "100%", gap: '0.5rem',margin: '1rem 0'}}><FilePenLine style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Un espace d&apos;édition de publications, avec accès à L&apos;API de Unsplash pour des images libres de droits, et DALL-E pour la génération d&apos;images  par IA</p></li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '1rem 0'}}><SquareLibrary style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Un espace médiathèque permettant a l&apos;utilisateur de stocker de simages , afin de les éditer, avec les editeurs d&apos;images et video prevu pour la deuxième phase de développement du projet</p></li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '1rem 0'}}><ServerCog style={{width: '1.5rem', height: '1.5rem'}}/><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Développement du back end de l&apos;application en adéquation avec les fonctionnalitées présenté ci dessus</p></li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '1rem 0'}}><HandPlatter style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>Application connecté avec Facebook, Instagram et LinkedIn. (Tiktok, snapchat,pinterest et X sont prévus à l&apos;avenir)</p></li>
                         </ul>
                     </div>
 
