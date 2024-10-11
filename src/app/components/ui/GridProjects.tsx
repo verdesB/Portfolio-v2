@@ -12,7 +12,7 @@ import reactIcon from '../../../../public/react.png'
 import graphql from '../../../../public/graphql.png'
 import nest from '../../../../public/nest.png'
 import prisma from '../../../../public/prisma.png'
-import sql from '../../../../public/mySql.png'
+import sql from '../../../../public/mySQL.png'
 import {
     CalendarPlus2,
     FilePenLine,
