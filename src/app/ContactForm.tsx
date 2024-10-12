@@ -80,7 +80,7 @@ export default function ContactForm() {
 
             <div className='contact__boxInputTop'>
                 <Label className="contact__label">Nom:</Label>
-                <Input className="contact__input" onChange={(event) => handleInputChange(event, 'name')}></Input>
+                <Input className="w-1/2" onChange={(event) => handleInputChange(event, 'name')}></Input>
                 <div className='contact__boxErrors'>
                     {errors.name &&
                         <>
@@ -92,7 +92,7 @@ export default function ContactForm() {
             </div>
             <div className='contact__boxInputTop'>
                 <Label className="contact__label">Prénom:</Label>
-                <Input className="contact__input" onChange={(event) => handleInputChange(event, 'surname')}></Input>
+                <Input className="w-1/2" onChange={(event) => handleInputChange(event, 'surname')}></Input>
                 <div className='contact__boxErrors'>
                     {errors.surname &&
                         <>
@@ -105,7 +105,7 @@ export default function ContactForm() {
             </div>
             <div className='contact__boxInput'>
                 <Label className="contact__label">Email:</Label>
-                <Input className="contact__input" onChange={(event) => handleInputChange(event, 'email')}></Input>
+                <Input className="w-1/2" onChange={(event) => handleInputChange(event, 'email')}></Input>
 
                 <div className='contact__boxErrors'>
                     {errors.email &&

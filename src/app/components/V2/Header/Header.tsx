@@ -21,8 +21,8 @@ const Header = () => {
                 <ul className="header__linksList">
                     <li className="header__link"><a href="#about">A propos</a></li>
                     <li className="header__link"><a href="#services">Services</a></li>
-                    <li className="header__link"><a href="#projects">Projects</a></li>
-                    <li className="header__link"><a href="#feedback">Feedbacks</a></li>
+                    <li className="header__link"><a href="#projects">Réalisations</a></li>
+                    <li className="header__link"><a href="#feedback">Avis</a></li>
                     <li className="header__link"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>

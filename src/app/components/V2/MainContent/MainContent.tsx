@@ -14,7 +14,7 @@ const MainContent = () => {
             <div className="mainContent__boxAboutText">
                 <div className="mainContent__subBoxText">
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    <p className="mainContent__text"><span><ContactRound /></span>Je m’appelle Benjamin, et je suis développeur web fullstack. Depuis toujours, j’ai été attiré par l'informatique, ce qui m’a naturellement conduit à choisir cette carrière. Ce qui me motive chaque jour, c’est la possibilité de pouvoir créer , développer des solutions faire une différence et d’apporter une valeur ajoutée à travers mon travail.</p>
+                    <p className="mainContent__text"><span><ContactRound /></span>Je m’appelle Benjamin, et je suis développeur web fullstack. Depuis toujours, j’ai été attiré par l'informatique, ce qui m’a naturellement conduit à choisir cette carrière. Ce qui me motive chaque jour, c’est la possibilité de créer et de développer des solutions innovantes. J’aime faire une différence et apporter une réelle valeur ajoutée à travers mon travail.</p>
                     <p className="mainContent__text"><span><Target /></span>Ce qui me pousse à aimer ce métier, c’est la capacité du numérique à simplifier la vie et à nous faire gagner du temps précieux. J’aime l’idée de pouvoir utiliser la technologie pour rendre les tâches quotidiennes plus efficaces et permettre aux gens de se concentrer sur ce qui compte vraiment pour eux.</p>
             </div>
                 <div className="mainContent__subBoxText">

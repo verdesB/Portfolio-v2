@@ -11,7 +11,7 @@ const FeedBacks = () => {
     console.log()
     return (
         <section id="feedback" className="feedbacks">
-            <h2 className="feedbacks__title">Feedbacks</h2>
+            <h2 className="feedbacks__title"><Highlight>Avis</Highlight></h2>
             <div className="feedbacks__cardsContainer">
                 <div className="feedbacks__card">
                     <Quote className="feedbacks__icon "/>

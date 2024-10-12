@@ -17,8 +17,7 @@ const CardCustom = () => {
                     clairement les contours du projet
                 </li>
                 <li className="card__item">Selon le type de projet, Création du schéma de la base de données</li>
-                <li className="card__item">Je choisi les technologies nécessaires selon les besoins du projet
-                </li>
+
                 <li className="card__item">Choix des technologies à utilisée selon le type de projet.</li>
             </ul>
         },
@@ -60,7 +59,7 @@ const CardCustom = () => {
             description: <ul className="card__listItems">
                 <li className="card__item">Mise en ligne de votre projet</li>
                 <li className="card__item">Mise en place du HTTPS afin de garantir la sécurité de vos utilisateurs</li>
-                <li className="card__item">Suivi de votre projet , selon le contrat établi</li>
+                <li className="card__item">Suivi de votre projet , sur ses performances, son SEO.</li>
             </ul>
         }
     ];

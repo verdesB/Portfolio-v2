@@ -19,8 +19,8 @@ const NavMobile = () => {
                 <ul className="header__linksListMobile">
                     <li className="header__linkMobile"><a href="#about">À propos</a></li>
                     <li className="header__linkMobile"><a href="#services">Services</a></li>
-                    <li className="header__linkMobile"><a href="#projects">Projects</a></li>
-                    <li className="header__linkMobile"><a href="#feedback">Feedbacks</a></li>
+                    <li className="header__linkMobile"><a href="#projects">Réalisations</a></li>
+                    <li className="header__linkMobile"><a href="#feedback">Avis</a></li>
                     <li className="header__linkMobile"><a href="#contact">Contact</a></li>
                 </ul>
             </div>

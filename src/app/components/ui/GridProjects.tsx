@@ -14,11 +14,11 @@ import nest from '../../../../public/nest.png'
 import prisma from '../../../../public/prisma.png'
 import sql from '../../../../public/mySQL.png'
 import {
-    CalendarPlus2,
+    CalendarPlus2, FileAxis3d,
     FilePenLine,
-    Folders,
-    HandPlatter,
-    LayoutDashboard,
+    Folders, GalleryThumbnails,
+    HandPlatter, Keyboard,
+    LayoutDashboard, Move3d, Rotate3d,
     ServerCog,
     SquareLibrary
 } from "lucide-react";
@@ -93,8 +93,8 @@ export function ExpandableCardDemo() {
                             <motion.div layoutId={`image-${active.title}-${id}`}>
                                 <Image
                                     priority
-                                    width={200}
-                                    height={200}
+                                    width={2000}
+                                    height={1000}
                                     src={active.src}
                                     alt={active.title}
                                     className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-center"
@@ -160,8 +160,8 @@ export function ExpandableCardDemo() {
                         <div className="flex gap-4 flex-col  w-full">
                             <motion.div layoutId={`image-${card.title}-${id}`}>
                                 <Image
-                                    width={100}
-                                    height={100}
+                                    width={2000}
+                                    height={1000}
                                     src={card.src}
                                     alt={card.title}
                                     className="h-60 w-full  rounded-lg object-cover object-center"
@@ -227,8 +227,8 @@ const cards = [
         description: "Application de gestion de réseaux sociaux",
         title: "Webtune",
         src: webtune.src,
-        ctaText: "Visit",
-        ctaLink: "/",
+        ctaText: "En développement",
+        ctaLink: "#video",
         content: () => {
 
             return (
@@ -254,7 +254,7 @@ const cards = [
                     </ul>
                     <div>
                         <h4 style={{fontSize: '1.5rem',marginBottom: '1rem'}}>Problématique :</h4>
-                        <p style={{fontSize: '1rem'}}>
+                        <p style={{fontSize: '0.9rem'}}>
                             Aujourd&apos;hui, la gestion des réseaux sociaux peut sembler très répétitive et chronophage. Lorsqu&apos;il s&apos;agit de gérer plusieurs réseaux sociaux, la tâche devient encore plus complexe, nécessitant de changer d&apos;application pour chaque publication, ce qui rend le processus inefficace et fastidieux.
                             Et décourageant pour les personnes qui ne sont pas forcement en phase avec les réseaux sociaux tel que moi ! #Boomer
                         </p>
@@ -263,10 +263,10 @@ const cards = [
                     <div style={{display: 'flex', gap: '1rem', flexDirection: 'column'}}>
                         <h4 style={{fontSize: '1.5rem'}}>Solution et fonctionnalitées :</h4>
 
-                        <p style={{fontSize: '1rem'}}>
+                        <p style={{fontSize: '0.9rem'}}>
                             Pour répondre à cette problématique, j&apos;ai décidé de développer une application qui permettra de gérer tous les réseaux sociaux en un seul et même endroit. Cela vise à minimiser le processus fastidieux et répétitif tout en maximisant la présence de l&apos;utilisateur sur ses réseaux. Grâce à un formulaire, l&apos;utilisateur pourra créer plusieurs contenus de publication adaptés à chaque format et réseau. En centralisant ses différents réseaux sociaux, il sera possible d&apos;ajouter une couche d&apos;organisation avec la programmation des publications, permettant ainsi de gérer son organisation comme souhaité.
                         </p>
-                        <ul style={{width: '100%',fontSize: '1rem'}}>
+                        <ul style={{width: '100%',fontSize: '0.9rem'}}>
                             <li style={{display: 'flex', alignItems: 'flex-start', gap:'0.5rem',margin: '1rem 0'}}><LayoutDashboard style={{width: '1.5rem', height: '1.5rem'}} /><p style={{width:'calc(100% - 1.5rem)',height: '100%'}}>
                                 Intégration d&apos;un dashboard</p>
                             </li>
@@ -287,7 +287,7 @@ const cards = [
                         borderRadius: '2rem',
                         boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'
                     }}>
-                        <video style={{height: "100%", width: '100%', borderRadius: '1.5rem',boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}} controls>
+                        <video id="video" style={{height: "100%", width: '100%', borderRadius: '1.5rem',boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}} controls>
                             <source style={{borderRadius: '1rem'}} src="/webtune.mp4" type="video/mp4"/>
                             Votre navigateur ne supporte pas la balise vidéo.
                         </video>
@@ -301,7 +301,7 @@ const cards = [
         description: "Portfolio d'une artiste en 3D",
         title: "Galerie d'art 3D",
         src: galerie.src,
-        ctaText: "Visit",
+        ctaText: "Visiter",
         ctaLink: "https://showroom-rtf.vercel.app/",
         content: () => {
             return (
@@ -322,24 +322,22 @@ const cards = [
                     <div>
                         <h4 style={{fontSize: '1.5rem',marginBottom: '0.5rem'}}>Problématique :</h4>
                         <p>
-                            Si vous voyez ce message , en espérant avoir amples informations sur ce projet , je suis
-                            dans le regret de vous annoncer que malheuresement , je suis a l&apos;heure ou je vous parle
-                            en train de mettre à jour le portfolio sur lequel vous vous trouvez
+                            Comment repenser et moderniser le site web d’une artiste peintre pour offrir une meilleure mise en scène de ses œuvres, tout en permettant aux utilisateurs de vivre une expérience immersive et interactive grâce à une visite virtuelle en 3D d’une galerie d’art ?
                         </p>
-
                     </div>
                     <div>
                         <h4 style={{fontSize: '1.5rem',marginBottom: '0.5rem'}}>Solution et fonctionnalitées :</h4>
-
                         <p>
-                            Si vous voyez ce message , en espérant avoir amples informations sur ce projet , je suis
-                            dans le
-                            regret de vous annoncer que malheuresement , je suis a l&apos;heure ou je vous parle en
-                            train de
-                            mettre à jour le portfolio sur lequel vous vous trouvez
+                            La cliente souhaite refondre son site web afin de mieux présenter ses œuvres. Pour répondre à cette demande, j&apos;ai créé un site en 3D qui permet aux utilisateurs de faire une visite immersive dans un environnement virtuel représentant une galerie d’art. Ce projet vise à améliorer l&apos;expérience utilisateur et à mettre en valeur les œuvres de l&apos;artiste de manière innovante et engageante.
                         </p>
+                        <ul>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '1rem 0'}}><FileAxis3d />Création de l&apos;établissement en 3D - Réalisé par un partenaire <a href="https://www.linkedin.com/in/kelliane-guerin-b1194818a/" target="_blank">Kelliane Guerin</a></li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '1rem 0'}}><Move3d />Création de deux scènes 3D , chacune adapté à un type d&apos;appareil</li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '1rem 0'}}><Keyboard />Version PC: Mouvement au clavier , souris</li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '1rem 0'}}><Rotate3d />Version Mobile: Déplacement avec touches directionelles, et orientation de la vue grace au gyroscope du mobile</li>
+                            <li style={{display: 'flex', alignItems: 'flex-start', width: "100%", gap: '0.5rem',margin: '1rem 0'}}> <GalleryThumbnails />Galeries dynamiques afin de pouvoir a partir d&apos;une scene en cours d&apos;execution , changer la galerie souhaitée sans rechargement complet de la scène </li>
+                        </ul>
                     </div>
-
                     <div style={{
                         display: "flex",
                         justifyContent: "center",
@@ -349,9 +347,7 @@ const cards = [
                     }}>
                         <video style={{height: "100%", width: '100%', borderRadius: '1.5rem',}} controls>
                             <source style={{borderRadius: '1rem'}} src="/threejs.mp4" type="video/mp4" />
-
                         </video>
-
                     </div>
                 </div>
             );
